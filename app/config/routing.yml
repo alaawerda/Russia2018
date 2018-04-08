@@ -1,10 +1,10 @@
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /user
 
 world_cup_russia:
     resource: "@WorldCupRussiaBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /acc
 
 app:
     resource: '@AppBundle/Controller/'
