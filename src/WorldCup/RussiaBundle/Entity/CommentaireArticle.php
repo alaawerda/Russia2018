@@ -34,11 +34,11 @@ class CommentaireArticle
      */
     private $contenu;
 
-  /*  /**
+    /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id")
      * @ORM\JoinColumn(nullable=false)
      */
-  /*  private $user; */
+    private $user;
 
 
     /**
