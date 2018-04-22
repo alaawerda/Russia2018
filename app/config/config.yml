@@ -10,10 +10,12 @@ imports:
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
-    user_class: UserBundle\Entity\User
+    user_class: WorldCup\RussiaBundle\Entity;
     from_email:
         address: "alaa.wzeda@esprit.tn"
         sender_name: "alaa werda"
+
+
 
 parameters:
     locale: en
@@ -77,3 +79,14 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+
+sonata_block:
+    default_contexts: [cms]
+
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+
+        # ...
