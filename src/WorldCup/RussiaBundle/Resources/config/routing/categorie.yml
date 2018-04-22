@@ -1,0 +1,24 @@
+categorie_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:index" }
+    methods:  GET
+
+categorie_show:
+    path:     /{id}/show
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:show" }
+    methods:  GET
+
+categorie_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:new" }
+    methods:  [GET, POST]
+
+categorie_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:edit" }
+    methods:  [GET, POST]
+
+categorie_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:delete" }
+    methods:  DELETE
