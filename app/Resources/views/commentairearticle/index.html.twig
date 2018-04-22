@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Commentairearticles list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Contenu</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commentaireArticle in commentaireArticles %}
+            <tr>
+                <td><a href="{{ path('commentairearticle_show', { 'id': commentaireArticle.id }) }}">{{ commentaireArticle.id }}</a></td>
+                <td>{{ commentaireArticle.contenu }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('commentairearticle_show', { 'id': commentaireArticle.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('commentairearticle_edit', { 'id': commentaireArticle.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('commentairearticle_new') }}">Create a new commentaireArticle</a>
+        </li>
+    </ul>
+{% endblock %}

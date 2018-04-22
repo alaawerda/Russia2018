@@ -1,0 +1,24 @@
+commentairearticle_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:index" }
+    methods:  GET
+
+commentairearticle_show:
+    path:     /{id}/show
+    defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:show" }
+    methods:  GET
+
+commentairearticle_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:new" }
+    methods:  [GET, POST]
+
+commentairearticle_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:edit" }
+    methods:  [GET, POST]
+
+commentairearticle_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:delete" }
+    methods:  DELETE

@@ -1,3 +1,19 @@
+world_cup_russia_article:
+    resource: "@WorldCupRussiaBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+world_cup_russia_categorie:
+    resource: "@WorldCupRussiaBundle/Resources/config/routing/categorie.yml"
+    prefix:   /categorie
+
+world_cup_russia_commentairearticle:
+    resource: "@WorldCupRussiaBundle/Resources/config/routing/commentairearticle.yml"
+    prefix:   /commentairearticle
+
+world_cup_russia_fichier:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/fichier.yml"
+        prefix:   /fichier
+
 world_cup_russia_homepage:
     path:     /home
     defaults: { _controller: WorldCupRussiaBundle:Default:index }
