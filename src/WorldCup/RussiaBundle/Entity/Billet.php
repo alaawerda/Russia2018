@@ -27,11 +27,11 @@ class Billet
      */
     private $matche;
 
-   /* /**
-     * @ORM\OneToMany(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id")
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id")
      * @ORM\JoinColumn(nullable=false)
      */
-  /*  private $user; */
+   private $user;
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\CategorieBillet", inversedBy="id")
