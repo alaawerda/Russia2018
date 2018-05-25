@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Feuils list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Etat</th>
+                <th>Titre</th>
+                <th>Datef</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for feuil in feuils %}
+            <tr>
+                <td><a href="{{ path('feuil_show', { 'id': feuil.id }) }}">{{ feuil.id }}</a></td>
+                <td>{{ feuil.Etat }}</td>
+                <td>{{ feuil.Titre }}</td>
+                <td>{% if feuil.DateF %}{{ feuil.DateF|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('feuil_show', { 'id': feuil.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('feuil_new') }}">Create a new feuil</a>
+        </li>
+    </ul>
+{% endblock %}

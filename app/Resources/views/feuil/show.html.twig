@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Feuil</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ feuil.id }}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ feuil.Etat }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ feuil.Titre }}</td>
+            </tr>
+            <tr>
+                <th>Datef</th>
+                <td>{% if feuil.DateF %}{{ feuil.DateF|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('feuil_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}">Edit</a>
+        </li>
+        <li>
+            <a href="{{ path('affichefeuildetail', { 'id': feuil.id }) }}">Liste Match</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
