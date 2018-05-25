@@ -41,6 +41,44 @@ class Equipe
     private $nom;
 
     /**
+     * @return mixed
+     */
+    public function getGroupe()
+    {
+        return $this->groupe;
+    }
+
+    /**
+     * @param mixed $groupe
+     */
+    public function setGroupe($groupe)
+    {
+        $this->groupe = $groupe;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLogo()
+    {
+        return $this->logo;
+    }
+
+    /**
+     * @param string $logo
+     */
+    public function setLogo($logo)
+    {
+        $this->logo = $logo;
+    }
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="logo", type="string", length=255)
+     */
+    private $logo;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="point", type="integer")
@@ -128,6 +166,7 @@ class Equipe
         // to show the id of the Category in the select
         // return $this->id;
     }
+
 
 
 }

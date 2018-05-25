@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('WorldCupRussiaBundle::layout.html.twig');
     }
+
+    public function backAction()
+    {
+        return $this->render('WorldCupRussiaBundle::back.html.twig');
+    }
 }

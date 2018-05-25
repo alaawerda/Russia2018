@@ -13,6 +13,37 @@ use Doctrine\ORM\Mapping as ORM;
 class Matche
 {
     /**
+     * @return mixed
+     */
+    public function getEquipeA()
+    {
+        return $this->equipeA;
+    }
+
+    /**
+     * @param mixed $equipeA
+     */
+    public function setEquipeA($equipeA)
+    {
+        $this->equipeA = $equipeA;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEquipeB()
+    {
+        return $this->equipeB;
+    }
+
+    /**
+     * @param mixed $equipeB
+     */
+    public function setEquipeB($equipeB)
+    {
+        $this->equipeB = $equipeB;
+    }
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -38,8 +69,26 @@ class Matche
      * @ORM\JoinColumn(nullable=false)
      */
     private $equipeB;
+    /**
+     * @ORM\OneToOne(targetEntity=StaffeArbitre::class, cascade={"persist", "remove"})
+     */
+    private $staffe_arbitre;
 
+    /**
+     * @return mixed
+     */
+    public function getStaffeArbitre()
+    {
+        return $this->staffe_arbitre;
+    }
 
+    /**
+     * @param mixed $staffe_arbitre
+     */
+    public function setStaffeArbitre($staffe_arbitre)
+    {
+        $this->staffe_arbitre = $staffe_arbitre;
+    }
     /**
      * @var \DateTime
      *
@@ -160,6 +209,11 @@ class Matche
         $this->stade = $stade;
     }
 
+    /*public function __toString()
+    {
+        $format = "Address (id: %s, street: %s, city: %s, country: %s)";
+        return sprintf($format, $this->id, $this->street, $this->city, $this->country);
+    }*/
 
 }
 
