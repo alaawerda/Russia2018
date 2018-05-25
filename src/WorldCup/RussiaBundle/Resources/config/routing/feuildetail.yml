@@ -1,0 +1,36 @@
+feuildetail_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:FeuilDetail:index" }
+    methods:  GET
+
+feuildetail_show:
+    path:     /{id}/{id2}/show
+    defaults: { _controller: "WorldCupRussiaBundle:FeuilDetail:show" }
+    methods:  GET
+
+feuildetail_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:FeuilDetail:new" }
+    methods:  [GET, POST]
+
+feuildetail_edit:
+    path:     /{id}/{id2}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:FeuilDetail:edit" }
+    methods:  [GET, POST]
+
+feuildetail_delete:
+    path:     /{id}/{id2}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:FeuilDetail:delete" }
+    methods:  DELETE
+
+affichefeuildetail:
+    path:     /affichefeuildetail
+    defaults: { _controller: WorldCupRussiaBundle:FeuilDetail:affichefeuildetail }
+
+supprimerfeuildetail:
+    path:     /supprimerfeuildetail
+    defaults: { _controller: WorldCupRussiaBundle:FeuilDetail:supprimerfeuildetail }
+
+ajouterfeuildetail:
+    path:     /ajouterfeuildetail
+    defaults: { _controller: WorldCupRussiaBundle:FeuilDetail:ajouterfeuildetail }

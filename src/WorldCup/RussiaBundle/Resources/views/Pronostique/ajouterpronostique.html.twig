@@ -1,0 +1,30 @@
+{% extends 'WorldCupRussiaBundle::base.html.twig' %}
+
+{% block content %}
+    <form method ="POST">
+<table border="2" width="100%">
+    <tr>
+        <th width="30%">Equipe 1</th>
+        <th>Score</th>
+        <th width="30%">Equipe 2</th>
+        <th width="30%">Statistique</th>
+    </tr>
+    {% for fd in feuildetail %}
+    <tr>
+        <td style="text-align: center"> {{ fd.matche.equipeA }} </td>
+        <td style="text-align: center"><input type="radio" name="{{ fd.matche.id }}" value="1" id='iquipe1' checked> <input type="radio" name="{{ fd.matche.id }}" value="0" id='iquipe0'> <input type="radio" name="{{ fd.matche.id }}" value="2" id='iquipe2'></td>
+        <td style="text-align: center"> {{ fd.matche.equipeB }} </td>
+        <th >{% if fd.Total > 0 %}
+            <div style="width:{{ fd.votea *100/ fd.Total }}%; float: left; padding: 4px 0 px 2 px 0 px;font-size: 11px; font-weight: normal; background-color: green">{{ fd.votea *100/ fd.Total }}%</div>
+            <div style="width:{{ fd.voteab *100/ fd.Total }}%; float: left; padding: 4px 0 2 px 0;font-size: 11px; font-weight: normal; background-color:orange">{{ fd.voteab *100/ fd.Total }}%</div>
+            <div style="width:{{ fd.voteb *100/ fd.Total }}%; float: left; padding: 4px 0 2 px 0;font-size: 11px; font-weight: normal; background-color: red">{{ fd.voteb *100/ fd.Total }}%</div>
+            {% endif %}
+        </th>
+    </tr>
+    {% endfor %}
+
+
+</table>
+        <input type="submit" value="Ajouter"/>
+    </form>
+{% endblock %}

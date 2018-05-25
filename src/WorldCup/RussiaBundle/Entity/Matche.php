@@ -160,6 +160,38 @@ class Matche
         $this->stade = $stade;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEquipeA()
+    {
+        return $this->equipeA;
+    }
+
+    /**
+     * @param mixed $equipeA
+     */
+    public function setEquipeA($equipeA)
+    {
+        $this->equipeA = $equipeA;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEquipeB()
+    {
+        return $this->equipeB;
+    }
+
+    /**
+     * @param mixed $equipeB
+     */
+    public function setEquipeB($equipeB)
+    {
+        $this->equipeB = $equipeB;
+    }
+
 
 }
 

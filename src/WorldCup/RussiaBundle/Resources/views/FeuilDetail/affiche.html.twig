@@ -1,0 +1,25 @@
+{% extends 'WorldCupRussiaBundle::base.html.twig' %}
+
+{% block content %}
+<h3>Liste detail feuil</h3>
+
+
+<table border ="2">
+
+    <th>Id Match</th>
+    <th>Id Feuil</th>
+
+
+
+    {% for fd in feuildetail %}
+        <tr>
+            <td>{{ fd.Feuil.Titre }}</td>
+            <td>{{ fd.matche.equipeA }} vs {{ fd.matche.equipeB }}</td>
+            <td><a href="{{ path('supprimerfeuildetail',{'id':fd.matche.id,'id2':fd.Feuil.id}) }}">Supprimer</a></td>
+        </tr>
+    {% endfor %}
+
+</table>
+<a href="{{ path('ajouterfeuildetail',{'id':idfeuil}) }}"><input type="button" value="Ajouter Matche"></a>
+    <a href="{{ path('feuil_show',{'id':idfeuil}) }}"><input type="button" value="Retour"></a>
+{% endblock %}

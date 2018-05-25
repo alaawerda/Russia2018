@@ -14,6 +14,26 @@ world_cup_russia_fichier:
         resource: "@WorldCupRussiaBundle/Resources/config/routing/fichier.yml"
         prefix:   /fichier
 
+world_cup_russia_feuil:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/feuil.yml"
+        prefix:   /feuil
+
+world_cup_russia_feuildetail:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/feuildetail.yml"
+        prefix:   /feuildetail
+
 world_cup_russia_homepage:
     path:     /home
     defaults: { _controller: WorldCupRussiaBundle:Default:index }
+
+affichefeuildetail:
+    path:     /affichefeuildetail
+    defaults: { _controller: WorldCupRussiaBundle:FeuilDetail:affichefeuildetail }
+
+supprimerfeuildetail:
+    path:     /supprimerfeuildetail
+    defaults: { _controller: WorldCupRussiaBundle:FeuilDetail:supprimerfeuildetail }
+
+ajouterPronostique:
+    path:     /ajouterPronostique
+    defaults: { _controller: WorldCupRussiaBundle:Pronostique:ajouterPronostique }

@@ -10,4 +10,13 @@ namespace WorldCup\RussiaBundle\Repository;
  */
 class FeuilRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function Select($Etat)
+    {
+        $q = $this->getEntityManager()
+            ->createQuery("SELECT u FROM 
+      WorldCupRussiaBundle:Feuil u 
+            WHERE u.Etat = :Etat")->setParameter('Etat',$Etat);
+        return $q->getOneOrNullResult();
+
+    }
 }

@@ -1,0 +1,17 @@
+{% extends 'WorldCupRussiaBundle::base.html.twig' %}
+
+{% block content %}
+    <h3>Liste match par feuil</h3>
+
+<form method ="POST">
+   FEUIL :<input type="text" value="{{ feuil.id }}" name="idfeuil"><br>
+   MATCH : <select name="idmatche">
+        {% for m in matche %}
+        <option value="{{ m.id }}">{{ m.equipeA }} vs {{ m.equipeB }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <input type="submit" value="Ajouter"/>
+</form>
+
+{% endblock %}
