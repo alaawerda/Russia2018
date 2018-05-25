@@ -37,3 +37,7 @@ supprimerfeuildetail:
 ajouterPronostique:
     path:     /ajouterPronostique
     defaults: { _controller: WorldCupRussiaBundle:Pronostique:ajouterPronostique }
+
+world_cup_russia_backpage:
+    path:     /back
+    defaults: { _controller: WorldCupRussiaBundle:Default:back }

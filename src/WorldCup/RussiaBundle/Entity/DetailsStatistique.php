@@ -41,6 +41,29 @@ class DetailsStatistique
      */
     private $type;
 
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=999999)
+     */
+    private $description;
+
 
     /**
      * Get id
@@ -109,6 +132,22 @@ class DetailsStatistique
     }
 
     /**
+     * @return string
+     */
+    public function getEquipe()
+    {
+        return $this->equipe;
+    }
+
+    /**
+     * @param string $equipe
+     */
+    public function setEquipe($equipe)
+    {
+        $this->equipe = $equipe;
+    }
+
+    /**
      * @param mixed $matche
      */
     public function setMatche($matche)
@@ -116,6 +155,11 @@ class DetailsStatistique
         $this->matche = $matche;
     }
 
-
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="equipe", type="string", length=255)
+     */
+    private $equipe;
 }
 

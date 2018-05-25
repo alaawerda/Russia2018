@@ -10,9 +10,9 @@ imports:
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
-    user_class: WorldCup\RussiaBundle\Entity;
+    user_class: WorldCup\RussiaBundle\Entity\User
     from_email:
-        address: "alaa.wzeda@esprit.tn"
+        address: "alaa.werda@esprit.tn"
         sender_name: "alaa werda"
 
 
@@ -79,5 +79,4 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
-
 

@@ -27,11 +27,6 @@ class StaffeArbitre
      */
     private $arbitre;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Matche", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $matche;
 
     /**
      * @var string
@@ -91,21 +86,7 @@ class StaffeArbitre
         $this->arbitre = $arbitre;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getMatche()
-    {
-        return $this->matche;
-    }
 
-    /**
-     * @param mixed $matche
-     */
-    public function setMatche($matche)
-    {
-        $this->matche = $matche;
-    }
 
 
 }
