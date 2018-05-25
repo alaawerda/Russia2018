@@ -59,7 +59,7 @@
     <!-- Header Mobile -->
     <div class="header-mobile clearfix" id="header-mobile">
         <div class="header-mobile__logo">
-            <a href="_soccer_index.html"><img src="assets\images\soccer\logo.png" srcset="assets\images\soccer\logo@2x.png 2x" alt="Alchemists" class="header-mobile__logo-img"></a>
+            <a href="{{ asset('_soccer_index.html') }}"><img src="{{ asset('assets\images\soccer\logo.png') }}" srcset="{{ asset('assets\images\soccer\logo@2x.png 2x') }}" alt="Alchemists" class="header-mobile__logo-img"></a>
         </div>
         <div class="header-mobile__inner">
             <a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
@@ -76,24 +76,24 @@
 
                 <!-- Account Navigation -->
                 <ul class="nav-account">
-                    <li class="nav-account__item"><a href="#" data-toggle="modal" data-target="#modal-login-register-tabs">Your Account</a></li>
+                    <li class="nav-account__item"><a href="{{ asset('#')}}" data-toggle="modal" data-target="#modal-login-register-tabs">Your Account</a></li>
                     <li class="nav-account__item nav-account__item--wishlist"><a href="_soccer_shop-wishlist.html">Wishlist <span class="highlight">8</span></a></li>
-                    <li class="nav-account__item"><a href="#">Currency: <span class="highlight">USD</span></a>
+                    <li class="nav-account__item"><a href="{{ asset('#')}}">Currency: <span class="highlight">USD</span></a>
                         <ul class="main-nav__sub">
-                            <li><a href="#">USD</a></li>
-                            <li><a href="#">EUR</a></li>
-                            <li><a href="#">GBP</a></li>
+                            <li><a href="{{ asset('#')}}">USD</a></li>
+                            <li><a href="{{ asset('#')}}">EUR</a></li>
+                            <li><a href="{{ asset('#')}}">GBP</a></li>
                         </ul>
                     </li>
                     <li class="nav-account__item"><a href="#">Language: <span class="highlight">EN</span></a>
                         <ul class="main-nav__sub">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>
-                            <li><a href="#">French</a></li>
-                            <li><a href="#">German</a></li>
+                            <li><a href="{{ asset('#')}}">English</a></li>
+                            <li><a href="{{ asset('#')}}">Spanish</a></li>
+                            <li><a href="{{ asset('#')}}">French</a></li>
+                            <li><a href="{{ asset('#')}}">German</a></li>
                         </ul>
                     </li>
-                    <li class="nav-account__item nav-account__item--logout"><a href="_soccer_shop-login.html">Logout</a></li>
+                    <li class="nav-account__item nav-account__item--logout"><a href="{{ asset('_soccer_shop-login.html')}}">Logout</a></li>
                 </ul>
                 <!-- Account Navigation / End -->
 
@@ -115,26 +115,26 @@
                 <ul class="info-block info-block--header">
                     <li class="info-block__item info-block__item--contact-primary">
                         <svg role="img" class="df-icon df-icon--whistle">
-                            <use xlink:href="assets/images/icons-soccer.svg#whistle"></use>
+                            <use xlink:href="{{ asset('assets/images/icons-soccer.svg#whistle')}}"></use>
                         </svg>
                         <h6 class="info-block__heading">Join Our Team!</h6>
                         <a class="info-block__link" href="mailto:tryouts@alchemists.com">tryouts@alchemists.com</a>
                     </li>
                     <li class="info-block__item info-block__item--contact-secondary">
                         <svg role="img" class="df-icon df-icon--soccer-ball">
-                            <use xlink:href="assets/images/icons-soccer.svg#soccer-ball"></use>
+                            <use xlink:href="{{ asset('assets/images/icons-soccer.svg#soccer-ball')}}"></use>
                         </svg>
                         <h6 class="info-block__heading">Contact Us</h6>
                         <a class="info-block__link" href="mailto:info@alchemists.com">info@alchemists.com</a>
                     </li>
                     <li class="info-block__item info-block__item--shopping-cart">
-                        <a href="#" class="info-block__link-wrapper">
+                        <a href="{{ asset('#')}}" class="info-block__link-wrapper">
                             <div class="df-icon-stack df-icon-stack--bag">
                                 <svg role="img" class="df-icon df-icon--bag">
-                                    <use xlink:href="assets/images/icons-basket.svg#bag"></use>
+                                    <use xlink:href="{{ asset('assets/images/icons-basket.svg#bag')}}"></use>
                                 </svg>
                                 <svg role="img" class="df-icon df-icon--bag-handle">
-                                    <use xlink:href="assets/images/icons-basket.svg#bag-handle"></use>
+                                    <use xlink:href="{{ asset('assets/images/icons-basket.svg#bag-handle')}}"></use>
                                 </svg>
                             </div>
                             <h6 class="info-block__heading">Your Bag (8 items)</h6>
@@ -145,13 +145,13 @@
                         <ul class="header-cart">
                             <li class="header-cart__item">
                                 <figure class="header-cart__product-thumb">
-                                    <a href="_soccer_shop-product.html">
-                                        <img src="assets\images\soccer\samples\_soccer_cart-sm-1.jpg" alt="">
+                                    <a href="{{ asset('_soccer_shop-product.html')}}">
+                                        <img src="{{ asset('assets\images\soccer\samples\_soccer_cart-sm-1.jpg')}}" alt="">
                                     </a>
                                 </figure>
                                 <div class="header-cart__inner">
                                     <span class="header-cart__product-cat">Sneakers</span>
-                                    <h5 class="header-cart__product-name"><a href="_soccer_shop-product.html">Sundown Sneaker</a></h5>
+                                    <h5 class="header-cart__product-name"><a href="{{ asset('_soccer_shop-product.html')}}">Sundown Sneaker</a></h5>
                                     <div class="header-cart__product-ratings">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -173,7 +173,7 @@
                                 </figure>
                                 <div class="header-cart__inner">
                                     <span class="header-cart__product-cat">Sneakers</span>
-                                    <h5 class="header-cart__product-name"><a href="_soccer_shop-product.html">Atlantik Sneaker</a></h5>
+                                    <h5 class="header-cart__product-name"><a href="{{ asset('_soccer_shop-product.html')}}">Atlantik Sneaker</a></h5>
                                     <div class="header-cart__product-ratings">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -189,13 +189,13 @@
                             </li>
                             <li class="header-cart__item">
                                 <figure class="header-cart__product-thumb">
-                                    <a href="_soccer_shop-product.html">
-                                        <img src="assets\images\soccer\samples\_soccer_cart-sm-2.jpg" alt="">
+                                    <a href="{{ asset('_soccer_shop-product.html') }}">
+                                        <img src="{{ asset('assets\images\soccer\samples\_soccer_cart-sm-2.jpg') }}" alt="">
                                     </a>
                                 </figure>
                                 <div class="header-cart__inner">
                                     <span class="header-cart__product-cat">Sneakers</span>
-                                    <h5 class="header-cart__product-name"><a href="_soccer_shop-product.html">Aquarium Sneaker</a></h5>
+                                    <h5 class="header-cart__product-name"><a href="{{ asset('_soccer_shop-product.html') }}">Aquarium Sneaker</a></h5>
                                     <div class="header-cart__product-ratings">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -214,8 +214,8 @@
                                 <span class="header-cart__subtotal-sum">$282.00</span>
                             </li>
                             <li class="header-cart__item header-cart__item--action">
-                                <a href="_soccer_shop-cart.html" class="btn btn-default btn-block">Go to Cart</a>
-                                <a href="_soccer_shop-checkout.html" class="btn btn-primary-inverse btn-block">Checkout</a>
+                                <a href="{{ asset('_soccer_shop-cart.html') }}" class="btn btn-default btn-block">Go to Cart</a>
+                                <a href="{{ asset('_soccer_shop-checkout.html') }}" class="btn btn-primary-inverse btn-block">Checkout</a>
                             </li>
                         </ul>
                         <!-- Dropdown Shopping Cart / End -->
@@ -233,26 +233,26 @@
 
                     <!-- Header Logo -->
                     <div class="header-logo">
-                        <a href="_soccer_index.html"><img src="assets\images\soccer\logo.png" srcset="assets\images\soccer\logo@2x.png 2x" alt="Alchemists" class="header-logo__img"></a>
+                        <a href="{{ asset('_soccer_index.html') }}"><img src="{{ asset('assets\images\soccer\logo.png') }}" srcset="{{ asset('assets\images\soccer\logo@2x.png 2x') }}" alt="Alchemists" class="header-logo__img"></a>
                     </div>
                     <!-- Header Logo / End -->
 
                     <!-- Main Navigation -->
                     <nav class="main-nav clearfix">
                         <ul class="main-nav__list">
-                            <li class="active"><a href="_soccer_index.html">Home</a></li>
-                            <li class=""><a href="#">Features</a>
+                            <li class="active"><a href="{{ asset('_soccer_index.html') }}">Home</a></li>
+                            <li class=""><a href="{{ asset('#') }}">Features</a>
                                 <div class="main-nav__megamenu clearfix">
                                     <ul class="col-lg-2 col-md-3 col-xs-12 main-nav__ul">
                                         <li class="main-nav__title">Features</li>
-                                        <li><a href="_soccer_features-shortcodes.html">Shortcodes</a></li>
-                                        <li><a href="_soccer_features-typography.html">Typography</a></li>
-                                        <li><a href="_soccer_features-widgets-blog.html">Widgets - Blog</a></li>
-                                        <li><a href="_soccer_features-widgets-shop.html">Widgets - Shop</a></li>
-                                        <li><a href="_soccer_features-widgets-sports.html">Widgets - Sports</a></li>
-                                        <li><a href="_soccer_features-404.html">404 Error Page</a></li>
-                                        <li><a href="_soccer_features-search-results.html">Search Results</a></li>
-                                        <li><a href="_soccer_page-contacts.html">Contact Us</a></li>
+                                        <li><a href="{{ asset('_soccer_features-shortcodes.html') }}">Shortcodes</a></li>
+                                        <li><a href="{{ asset('_soccer_features-typography.html') }}">Typography</a></li>
+                                        <li><a href="{{ asset('_soccer_features-widgets-blog.html') }}">Widgets - Blog</a></li>
+                                        <li><a href="{{ asset('_soccer_features-widgets-shop.html') }}">Widgets - Shop</a></li>
+                                        <li><a href="{{ asset('_soccer_features-widgets-sports.html') }}">Widgets - Sports</a></li>
+                                        <li><a href="{{ asset('_soccer_features-404.html') }}">404 Error Page</a></li>
+                                        <li><a href="{{ asset('_soccer_features-search-results.html') }}">Search Results</a></li>
+                                        <li><a href="{{ asset('_soccer_page-contacts.html') }}">Contact Us</a></li>
                                     </ul>
                                     <ul class="col-lg-2 col-md-3 col-xs-12 main-nav__ul">
                                         <li class="main-nav__title">Main Features</li>
