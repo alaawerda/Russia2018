@@ -17,3 +17,6 @@ world_cup_russia_fichier:
 world_cup_russia_homepage:
     path:     /home
     defaults: { _controller: WorldCupRussiaBundle:Default:index }
+world_cup_russia_backpage:
+    path:     /back
+    defaults: { _controller: WorldCupRussiaBundle:Default:back }
