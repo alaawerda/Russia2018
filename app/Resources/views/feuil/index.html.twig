@@ -1,9 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'WorldCupRussiaBundle::base.html.twig' %}
 
 {% block content %}
     <h1>Feuils list</h1>
 
-    <table>
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th>Id</th>
@@ -23,10 +23,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('feuil_show', { 'id': feuil.id }) }}">show</a>
+                            <a href="{{ path('feuil_show', { 'id': feuil.id }) }}"><span class="glyphicon glyphicon-check"></span> show</a>
                         </li>
                         <li>
-                            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}">edit</a>
+                            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}"><span class="glyphicon glyphicon-edit"></span> edit</a>
                         </li>
                     </ul>
                 </td>
@@ -37,7 +37,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('feuil_new') }}">Create a new feuil</a>
+            <a href="{{ path('feuil_new') }}"><input type="button" value="Create a new feuil" class="btn btn-success"></a>
         </li>
     </ul>
 {% endblock %}
