@@ -12,42 +12,93 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Pronostique
 {
-
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Matche", inversedBy="id")
      * @ORM\JoinColumn(nullable=false)
-     * @ORM\Id
      */
     private $matche;
 
     /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Feuil", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
-     * @ORM\Id
+     * @var string
+     *
+     * @ORM\Column(name="score", type="string", length=255)
      */
-    private $Feuil;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id" , cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
-     * @ORM\Id
-     */
-    private $User;
+    private $score;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="resulta", type="string", length=255)
+     * @ORM\Column(name="status", type="string", length=255)
      */
-    private $resulta;
+    private $status;
+
 
     /**
-     * @var string
+     * Get id
      *
-     * @ORM\Column(name="dateInsertion", type="date")
+     * @return integer
      */
-    private $dateInsertion;
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set score
+     *
+     * @param string $score
+     *
+     * @return Pronostique
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+    
+        return $this;
+    }
+
+    /**
+     * Get score
+     *
+     * @return string
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     *
+     * @return Pronostique
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
 
     /**
      * @return mixed
@@ -64,74 +115,6 @@ class Pronostique
     {
         $this->matche = $matche;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getFeuil()
-    {
-        return $this->Feuil;
-    }
-
-    /**
-     * @param mixed $Feuil
-     */
-    public function setFeuil($Feuil)
-    {
-        $this->Feuil = $Feuil;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->User;
-    }
-
-    /**
-     * @param mixed $User
-     */
-    public function setUser($User)
-    {
-        $this->User = $User;
-    }
-
-    /**
-     * @return string
-     */
-    public function getResulta()
-    {
-        return $this->resulta;
-    }
-
-    /**
-     * @param string $resulta
-     */
-    public function setResulta($resulta)
-    {
-        $this->resulta = $resulta;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDateInsertion()
-    {
-        return $this->dateInsertion;
-    }
-
-    /**
-     * @param string $dateInsertion
-     */
-    public function setDateInsertion($dateInsertion)
-    {
-        $this->dateInsertion = $dateInsertion;
-    }
-
-
-
-
 
 
 }

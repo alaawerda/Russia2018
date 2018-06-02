@@ -238,11 +238,12 @@ class Statistique
      */
     private $saves;
 
+
     /**
-     * @var string
-     *
-     * @ORM\Column(name="equipe", type="string", length=255)
-     */
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
+
     private $equipe;
 
 

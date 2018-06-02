@@ -21,29 +21,30 @@ class Feuil
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Etat", type="string", length=255)
+  /*  /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $Etat;
+  /*  private $user; */
+
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Pronostique", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $pronostique;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Titre", type="string", length=255)
+     * @ORM\Column(name="resultat", type="string", length=255)
      */
-    private $Titre;
+    private $resultat;
+
 
     /**
-     * @var string
+     * Get id
      *
-     * @ORM\Column(name="DateF", type="date")
-     */
-    private $DateF;
-
-    /**
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -51,62 +52,36 @@ class Feuil
     }
 
     /**
-     * @param int $id
+     * @return mixed
      */
-    public function setId($id)
+    public function getPronostique()
     {
-        $this->id = $id;
+        return $this->pronostique;
+    }
+
+    /**
+     * @param mixed $pronostique
+     */
+    public function setPronostique($pronostique)
+    {
+        $this->pronostique = $pronostique;
     }
 
     /**
      * @return string
      */
-    public function getEtat()
+    public function getResultat()
     {
-        return $this->Etat;
+        return $this->resultat;
     }
 
     /**
-     * @param string $Etat
+     * @param string $resultat
      */
-    public function setEtat($Etat)
+    public function setResultat($resultat)
     {
-        $this->Etat = $Etat;
+        $this->resultat = $resultat;
     }
-
-    /**
-     * @return string
-     */
-    public function getTitre()
-    {
-        return $this->Titre;
-    }
-
-    /**
-     * @param string $Titre
-     */
-    public function setTitre($Titre)
-    {
-        $this->Titre = $Titre;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDateF()
-    {
-        return $this->DateF;
-    }
-
-    /**
-     * @param string $DateF
-     */
-    public function setDateF($DateF)
-    {
-        $this->DateF = $DateF;
-    }
-
-
 
 
 }
