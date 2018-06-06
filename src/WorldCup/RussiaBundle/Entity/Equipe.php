@@ -27,11 +27,7 @@ class Equipe
      */
     private $entraineur;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $groupe;
+
 
     /**
      * @var string
@@ -40,21 +36,8 @@ class Equipe
      */
     private $nom;
 
-    /**
-     * @return mixed
-     */
-    public function getGroupe()
-    {
-        return $this->groupe;
-    }
 
-    /**
-     * @param mixed $groupe
-     */
-    public function setGroupe($groupe)
-    {
-        $this->groupe = $groupe;
-    }
+
 
     /**
      * @return string

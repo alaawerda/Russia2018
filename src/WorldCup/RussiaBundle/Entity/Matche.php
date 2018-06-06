@@ -13,6 +13,27 @@ use Doctrine\ORM\Mapping as ORM;
 class Matche
 {
     /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $groupe;
+
+    /**
+     * @return mixed
+     */
+    public function getGroupe()
+    {
+        return $this->groupe;
+    }
+
+    /**
+     * @param mixed $groupe
+     */
+    public function setGroupe($groupe)
+    {
+        $this->groupe = $groupe;
+    }
+    /**
      * @return mixed
      */
     public function getEquipeA()
@@ -92,7 +113,7 @@ class Matche
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 

@@ -15,7 +15,7 @@ class DetailsStatistique
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="integer")http://www.tunisietravail.net/attijari-bank-recherche-plusieurs-profils-63376/
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -30,7 +30,7 @@ class DetailsStatistique
     /**
      * @var string
      *
-     * @ORM\Column(name="temps", type="string", length=255)
+     * @ORM\Column(name="temps", type="integer", )
      */
     private $temps;
 
@@ -156,10 +156,32 @@ class DetailsStatistique
     }
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="equipe", type="string", length=255)
-     */
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
+
     private $equipe;
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Joueur", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
+
+    private $joueur;
+
+    /**
+     * @return mixed
+     */
+    public function getJoueur()
+    {
+        return $this->joueur;
+    }
+
+    /**
+     * @param mixed $joueur
+     */
+    public function setJoueur($joueur)
+    {
+        $this->joueur = $joueur;
+    }
 }
 

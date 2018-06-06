@@ -1,0 +1,24 @@
+matche_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:index" }
+    methods:  GET
+
+matche_show:
+    path:     /{id}/show
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:show" }
+    methods:  GET
+
+matche_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:new" }
+    methods:  [GET, POST]
+
+matche_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:edit" }
+    methods:  [GET, POST]
+
+matche_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:delete" }
+    methods:  DELETE

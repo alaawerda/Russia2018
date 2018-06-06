@@ -3,7 +3,7 @@
 {% block content %}
     <h1>Feuil</h1>
 
-    <table>
+    <table class="table table-hover">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -26,17 +26,19 @@
 
     <ul>
         <li>
-            <a href="{{ path('feuil_index') }}">Back to the list</a>
+            <a href="{{ path('feuil_index') }}"><span class="glyphicon glyphicon-arrow-left"></span> Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}">Edit</a>
+            <a href="{{ path('feuil_edit', { 'id': feuil.id }) }}"><span class="glyphicon glyphicon-edit"></span> Edit</a>
         </li>
         <li>
-            <a href="{{ path('affichefeuildetail', { 'id': feuil.id }) }}">Liste Match</a>
+            <a href="{{ path('affichefeuildetail', { 'id': feuil.id }) }}"><span class="glyphicon glyphicon-arrow-right"></span> Liste Match</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <button type="submit" value="Delete" class="btn btn-info">
+            <span class="glyphicon glyphicon-remove-sign"></span> Delete
+                    </button>
             {{ form_end(delete_form) }}
         </li>
     </ul>

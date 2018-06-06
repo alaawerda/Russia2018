@@ -41,3 +41,7 @@ ajouterPronostique:
 world_cup_russia_backpage:
     path:     /back
     defaults: { _controller: WorldCupRussiaBundle:Default:back }
+
+world_cup_russia_matche:
+    resource: "@WorldCupRussiaBundle/Resources/config/routing/matche.yml"
+    prefix:   /matche
