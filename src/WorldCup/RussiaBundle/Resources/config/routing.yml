@@ -13,6 +13,9 @@ world_cup_russia_commentairearticle:
 world_cup_russia_fichier:
         resource: "@WorldCupRussiaBundle/Resources/config/routing/fichier.yml"
         prefix:   /fichier
+world_cup_russia_arbitre:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/arbitre.yml"
+        prefix:   /arbitre
 
 world_cup_russia_homepage:
     path:     /home

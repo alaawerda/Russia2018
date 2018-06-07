@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Arbitres list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Nationalite</th>
+                <th>Confederations</th>
+                <th>Specialite</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for arbitre in arbitres %}
+            <tr>
+                <td><a href="{{ path('arbitre_show', { 'id': arbitre.id }) }}">{{ arbitre.id }}</a></td>
+                <td>{{ arbitre.nom }}</td>
+                <td>{{ arbitre.prenom }}</td>
+                <td>{{ arbitre.nationalite }}</td>
+                <td>{{ arbitre.confederations }}</td>
+                <td>{{ arbitre.specialite }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('arbitre_show', { 'id': arbitre.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('arbitre_edit', { 'id': arbitre.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('arbitre_new') }}">Create a new arbitre</a>
+        </li>
+    </ul>
+{% endblock %}

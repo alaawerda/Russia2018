@@ -36,17 +36,36 @@ class Stade
     private $nom;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="ville", type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Ville", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $ville;
 
 
     /**
-     * Get id
+     * @var string
      *
-     * @return integer
+     * @ORM\Column(name="image", type="string", length=255)
+     */
+    private $image;
+
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="longitude", type="float")
+     */
+    private $longitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="latitude", type="float")
+     */
+    private $latitude;
+
+    /**
+     * @return int
      */
     public function getId()
     {
@@ -54,22 +73,14 @@ class Stade
     }
 
     /**
-     * Set capacite
-     *
-     * @param float $capacite
-     *
-     * @return Stade
+     * @param int $id
      */
-    public function setCapacite($capacite)
+    public function setId($id)
     {
-        $this->capacite = $capacite;
-    
-        return $this;
+        $this->id = $id;
     }
 
     /**
-     * Get capacite
-     *
      * @return float
      */
     public function getCapacite()
@@ -78,22 +89,14 @@ class Stade
     }
 
     /**
-     * Set nom
-     *
-     * @param string $nom
-     *
-     * @return Stade
+     * @param float $capacite
      */
-    public function setNom($nom)
+    public function setCapacite($capacite)
     {
-        $this->nom = $nom;
-    
-        return $this;
+        $this->capacite = $capacite;
     }
 
     /**
-     * Get nom
-     *
      * @return string
      */
     public function getNom()
@@ -102,27 +105,79 @@ class Stade
     }
 
     /**
-     * Set ville
-     *
-     * @param string $ville
-     *
-     * @return Stade
+     * @param string $nom
      */
-    public function setVille($ville)
+    public function setNom($nom)
     {
-        $this->ville = $ville;
-    
-        return $this;
+        $this->nom = $nom;
     }
 
     /**
-     * Get ville
-     *
-     * @return string
+     * @return mixed
      */
     public function getVille()
     {
         return $this->ville;
     }
+
+    /**
+     * @param mixed $ville
+     */
+    public function setVille($ville)
+    {
+        $this->ville = $ville;
+    }
+
+
+   /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+
+    /**
+     * @param float $longitude
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * @param float $latitude
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+    }
+
+
+
 }
 
