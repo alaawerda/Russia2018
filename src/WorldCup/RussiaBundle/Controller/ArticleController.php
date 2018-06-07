@@ -22,7 +22,7 @@ class ArticleController extends Controller
 
         $articles = $em->getRepository('WorldCupRussiaBundle:Article')->findAll();
 
-        return $this->render('article/index.html.twig', array(
+        return $this->render('article/testaff.html.twig', array(
             'articles' => $articles,
         ));
     }

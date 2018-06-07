@@ -1,25 +1,25 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <h1>Article</h1>
+    <h1>{{ article.titre }}</h1>
 
     <table>
         <tbody>
-            <tr>
+            <tr hidden>
                 <th>Id</th>
                 <td>{{ article.id }}</td>
             </tr>
             <tr>
-                <th>Description</th>
-                <td>{{ article.description }}</td>
+                <th>Description                    </th>
+                <td>           {{ article.description }}</td>
             </tr>
             <tr>
-                <th>Titre</th>
-                <td>{{ article.titre }}</td>
+                <th>Titre                       </th>
+                <td>           {{ article.titre }}</td>
             </tr>
             <tr>
-                <th>Date</th>
-                <td>{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</td>
+                <th>Date                       </th>
+                <td>         {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</td>
             </tr>
         </tbody>
     </table>
@@ -28,10 +28,10 @@
         <li>
             <a href="{{ path('article_index') }}">Back to the list</a>
         </li>
-        <li>
+        <li hidden>
             <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
         </li>
-        <li>
+        <li hidden>
             {{ form_start(delete_form) }}
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
