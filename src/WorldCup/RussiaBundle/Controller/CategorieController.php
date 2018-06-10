@@ -27,6 +27,19 @@ class CategorieController extends Controller
         ));
     }
 
+
+    public function indexbackAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $categories = $em->getRepository('WorldCupRussiaBundle:Categorie')->findAll();
+
+        return $this->render('categorie/indexback.html.twig', array(
+            'categories' => $categories,
+        ));
+    }
+
+
     /**
      * Creates a new categorie entity.
      *

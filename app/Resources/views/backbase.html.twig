@@ -61,7 +61,7 @@
 
         <!-- Site header  -->
         <header class="site-header">
-            <div class="site-logo"><a href="#"><img src="{{ asset('back/images/logo.png') }}" alt="Russia 2018" title="Russia 2018"></a></div>
+            <div class="site-logo"><a href="#"><img src="{{ asset('back/images/russia.png') }}" alt="Russia 2018" title="Russia 2018"></a></div>
             <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
             <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
         </header>
@@ -77,15 +77,30 @@
 
                 </ul>
             </li>
-            <li class="has-sub"><a href="#"><i class="icon-layout"></i><span class="title">Layouts</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-layout"></i><span class="title">Articles</span></a>
+
                 <ul class="nav collapse">
-                    <li><a href="#"><span class="title">Collapsed Sidebar</span></a></li>
+                    <li><a href="{{ path('article_indexback') }}"><span class="title">Afficher les Articles</span></a></li>
 
                 </ul>
-            </li>
-            <li class="has-sub"><a href="#"><i class="icon-newspaper"></i><span class="title">UI Elements</span></a>
+
                 <ul class="nav collapse">
-                    <li><a href="#"><span class="title">Panels</span></a></li>
+
+                    <li><a href="{{ path('article_new') }}"><span class="title">Ajouter Article</span></a></li>
+
+                </ul>
+
+
+            </li>
+            <li class="has-sub"><a href="#"><i class="icon-newspaper"></i><span class="title">Categories Article</span></a>
+                <ul class="nav collapse">
+                    <li><a href="{{ path('categorie_indexback') }}"><span class="title">Afficher les Categories Articles</span></a></li>
+
+                </ul>
+
+                <ul class="nav collapse">
+
+                    <li><a href="{{ path('categorie_new') }}"><span class="title">Ajouter Categorie Article</span></a></li>
 
                 </ul>
             </li>
@@ -377,5 +392,4 @@
 {% endblock %}
 
 
-<!-- Mirrored from www.g-axon.com/mouldifi-5.0/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 May 2018 20:54:55 GMT -->
 </html>

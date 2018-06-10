@@ -3,9 +3,19 @@ article_index:
     defaults: { _controller: "WorldCupRussiaBundle:Article:index" }
     methods:  GET
 
+article_indexback:
+    path:     /indexback
+    defaults: { _controller: "WorldCupRussiaBundle:Article:indexback" }
+    methods:  GET
+
 article_show:
     path:     /{id}/show
     defaults: { _controller: "WorldCupRussiaBundle:Article:show" }
+    methods:  GET
+
+article_showback:
+    path:     /{id}/showback
+    defaults: { _controller: "WorldCupRussiaBundle:Article:showback" }
     methods:  GET
 
 article_new:

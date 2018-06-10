@@ -1,5 +1,4 @@
-{% extends 'WorldCupRussiaBundle::base.html.twig' %}
-
+{% extends 'backbase.html.twig' %}
 {% block content %}
     <h1>Article creation</h1>
 
@@ -8,9 +7,9 @@
         <input type="submit" value="Create" />
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
-        </li>
-    </ul>
+
+        <button>
+            <a href="{{ path('article_indexback') }}">Back to the list</a>
+        </button>
+
 {% endblock content %}
