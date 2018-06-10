@@ -3,6 +3,11 @@ categorie_index:
     defaults: { _controller: "WorldCupRussiaBundle:Categorie:index" }
     methods:  GET
 
+categorie_indexback:
+    path:     /indexback
+    defaults: { _controller: "WorldCupRussiaBundle:Categorie:indexback" }
+    methods:  GET
+
 categorie_show:
     path:     /{id}/show
     defaults: { _controller: "WorldCupRussiaBundle:Categorie:show" }

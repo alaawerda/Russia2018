@@ -1,48 +1,55 @@
 {% extends 'WorldCupRussiaBundle::base.html.twig' %}
 
 {% block content %}
-{% for article in articles %}
+
 <!-- Post Area 1 -->
 <div class="posts posts--cards post-grid row">
 
-    <div class="post-grid__item col-sm-6">
+    <div class="post-grid__item col-sm-12">
         <div class="posts__item posts__item--card posts__item--category-1 card">
             <figure class="posts__thumb">
 
 
             </figure>
-            <div class="posts__inner card__content">
+
+            {% for article in articles %}
+
+            <div class="posts__inner card__content col-sm-6" style="background: #ffffff;">
 
 
                 <!-- date de l article -->
                 <time datetime="2016-08-23" class="posts__date">{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</time>
                 <!-- titre de l'article -->
-                <img src="{{asset ('soccer\assets\images\tunisie.png')}}" alt=""></a>
+                <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" "></a>
                 <h6 class="posts__title"><a href="{{ path('article_show',{'id' :article.id}) }}">{{ article.titre }}</a></h6>
 
                 <!-- details article -->
                 <div class="posts__excerpt">
                     {{ article.description }}
                 </div>
-            </div>
-            <footer class="posts__footer card__footer">
-                <div class="post-author">
-                    <figure class="post-author__avatar">
-                        <img src="{{asset ('soccer\assets\images\tunisie.png')}}" alt="Post Author Avatar" height="60" width="50">
 
-                    </figure>
-                    <div class="post-author__info">
 
-                        <!-- auteur de l article -->
-                        <h4 class="post-author__name">Touil Montassar</h4>
+
+                <footer class="posts__footer card__footer">
+                    <div class="post-author">
+                        <figure class="post-author__avatar">
+                            <img src="/PIDev/Russia2018/web/soccer\assets\images\tunisie.png" alt="Post Author Avatar" height="60" width="50">
+
+                        </figure>
+                        <div class="post-author__info">
+
+                            <!-- auteur de l article -->
+                            <h4 class="post-author__name">Touil Montassar</h4>
+                        </div>
                     </div>
-                </div>
-                <ul class="post__meta meta">
-                    <li class="meta__item meta__item--views">2369</li>
-                    <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
-                    <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                </ul>
-            </footer>
+                    <ul class="post__meta meta">
+                        <li class="meta__item meta__item--views">2369</li>
+                        <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+                        <li class="meta__item meta__item--comments"><a href="#">18</a></li>
+                    </ul>
+                </footer>
+            </div>
+            {% endfor %}
         </div>
     </div>
 
@@ -58,5 +65,5 @@
 </div>
 <!-- Post Area 1 / End -->
 
-{% endfor %}
+
 {% endblock content %}

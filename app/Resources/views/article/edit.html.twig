@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'backbase.html.twig' %}
 
 {% block content %}
     <h1>Article edit</h1>
@@ -9,13 +9,13 @@
     {{ form_end(edit_form) }}
 
     <ul>
-        <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
-        </li>
-        <li>
+        <button>
+            <a href="{{ path('article_indexback') }}">Back to the list</a>
+        </button>
+        <button hidden>
             {{ form_start(delete_form) }}
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
-        </li>
+        </button>
     </ul>
 {% endblock content %}

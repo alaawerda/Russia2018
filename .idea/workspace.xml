@@ -2,297 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d773977a-a818-4025-8f81-84ddf7719e27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/images/alpha-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/images/alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/images/hue-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/images/hue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/images/saturation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/dropzone/images/spritemap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/dropzone/images/spritemap@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/summernote/font/summernoted41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/summernote/font/summernotef534.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/summernote/font/summernotef534.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/summernote/font/summernotef534.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/entypo.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/entypo.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/entypo.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/entypod41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfont3295.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfont3295.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfont3295.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfontd41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regulard41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/alarm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/alex-dolgove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/annual-book.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/article-post-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/article-post.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/bar-chart-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/basketball.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/blog-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/blog-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/camera.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/carpanter.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/chocolate.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/clock.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/desserts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/domnic-brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/headphone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/icon-close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/imac-40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/john-smith.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/like-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/macbook-40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/man-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/media-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/media-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/media-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/office-40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/running-shoe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/snooker.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/stella-johnson.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/soccer/assets/images/tunisie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/article/testaff.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/backbase.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuil/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuil/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuil/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuil/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuildetail/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuildetail/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuildetail/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/feuildetail/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/fichier/baseback.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/loginorregister.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/stade/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/stade/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/stade/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/stade/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ville/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ville/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ville/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ville/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/FeuilController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/FeuilDetailController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/MatcheController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/PronostiqueController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/StadeController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/VilleController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/FeuilDetail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/FeuilDetailType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/FeuilType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/MatcheType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/StadeType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/VilleType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Repository/FeuilDetailRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/feuil.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/feuildetail.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/matche.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/stade.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/ville.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/FeuilDetail/affiche.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/FeuilDetail/ajoutermatch.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/Pronostique/ajouterpronostique.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/back.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Tests/Controller/MatcheControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Tests/Controller/StadeControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Tests/Controller/VilleControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/alerts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/badges-label.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/basic-tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/blank-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/blog-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/blog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/breadcrumbs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/cards-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/collapsed-sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/entypo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/mouldifi-core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/mouldifi-forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/c3/c3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/chartist/chartist.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/colorpicker/bootstrap-colorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/css3-animate-it-plugin/animations.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/datatables/jquery.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/datepicker/bootstrap-datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/dropzone/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/jvectormap/jquery-jvectormap-2.0.3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/markdown/bootstrap-markdown.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/morris/morris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/nouislider/nouislider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/scrollbar/perfect-scrollbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/select2/select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/css/plugins/summernote/summernote.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/data-tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/detailed-view-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/detailed-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/ecommerce-dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/editors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/error-404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/file-upload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fixed-sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/entypo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfont3295.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/fontawesome-webfont3295.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/fonts/glyphicons-halflings-regular.svg.readme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/forgot-password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/form-advanced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/form-basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/form-wizard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-c3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-chartist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-chartjs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-flot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-morris.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-peity.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/graph-sparkline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/icons-entypo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/icons-fontawesome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/icons-glyphicons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/blockui-master/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/blockui-master/jquery.blockUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/c3/c3-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/c3/c3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/c3/d3.v3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/chartist/chartist-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/chartist/chartist.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/chartjs/Chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/chartjs/chartjs-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/colorpicker/bootstrap-colorpicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/css3-animate-it-plugin/css3-animate-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/extensions/Buttons/js/buttons.html5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/jszip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/pdfmake.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datatables/vfs_fonts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/datepicker/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/dropzone/dropzone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/flot-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.pie.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.resize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.selection.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.time.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/jasny/jasny-bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/markdown/bootstrap-markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/markdown/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/metismenu/jquery.metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/morris/morris-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/morris/morris.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/morris/raphael-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/nouislider/nouislider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/peity/jquery.peity.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/peity/peity-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/scrollbar/perfect-scrollbar.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/select2/select2.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/sparkline/jquery.sparkline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/sparkline/sparkline-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/summernote/summernote.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/js/plugins/wizard/jquery.bootstrap.wizard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/lockscreen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/mail-compose.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/mail-inbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/mail-read.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/maps-vector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/modals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/navbars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/news-dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/panels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/progress-bars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/short-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/simple-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/strip-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/table-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/tabs-accordions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/timeline-center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/timeline-icon-based-center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/timeline-icon-based.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/timeline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/tooltips-popovers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.phar" afterPath="$PROJECT_DIR$/composer.phar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Russia2018.iml" afterPath="$PROJECT_DIR$/.idea/Russia2018.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/back/images/russia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploads/images/products/Tunisie-Une-.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/article/indexback.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/article/showback.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/indexback.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichier/baseback.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichier/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichier/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/fichier/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/FichierController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Fichier.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/FichierType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Repository/FichierRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/fichier.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Tests/Controller/FichierControllerTest.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/fichier/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/edit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/arbitre/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/arbitre/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/arbitre/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/arbitre/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/arbitre/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/arbitre/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/arbitre/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/arbitre/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/article/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/article/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/article/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/article/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/article/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/article/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/article/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/article/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/categorie/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/article/testaff.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/article/testaff.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/backbase.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/backbase.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/categorie/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/categorie/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/commentairearticle/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/commentairearticle/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/commentairearticle/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/commentairearticle/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/commentairearticle/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/commentairearticle/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/commentairearticle/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/commentairearticle/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/matche/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/matche/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/ArticleController.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Billet.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Billet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/DetailsStatistique.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/DetailsStatistique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Equipe.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Equipe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Feuil.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Feuil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Groupe.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Groupe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Matche.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Matche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Pronostique.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Pronostique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Stade.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Stade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/StaffeArbitre.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/StaffeArbitre.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Statistique.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Statistique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Ville.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Ville.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Repository/FeuilRepository.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Repository/FeuilRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/CategorieController.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Controller/CategorieController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Article.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/ArticleType.php" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Form/ArticleType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/article.yml" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/article.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/categorie.yml" afterPath="$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing/categorie.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -320,6 +70,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-129">
+              <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/ville/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -345,26 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/ville/new.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/ville/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -400,11 +140,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Stade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3092">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -455,7 +205,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:crud WorldCup/RussiaBundle:Matche" />
       <command text="s doctrine:generate:crud " />
       <command text="s doctrine:generate:crud WorldCup\RussiaBundle:Matche" />
       <command text="s doctrine:generate:crud " />
@@ -480,6 +229,7 @@
       <command text="c require vich/uploader-bundle" />
       <command text="&gt;php -d memory_limit=-1 ../composer.phar update" />
       <command text="c require vich/uploader-bundle" />
+      <command text="c dump-autoload" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -593,7 +343,19 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-acl" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/datagrid-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-orm-admin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/cache" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -679,113 +441,12 @@
             <path>
               <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routing" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WorldCup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RussiaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Russia2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Russia2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="soccer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -886,6 +547,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d773977a-a818-4025-8f81-84ddf7719e27" name="Default" comment="" />
@@ -928,7 +592,7 @@
       <workItem from="1527452443590" duration="7157000" />
       <workItem from="1527466064840" duration="14521000" />
       <workItem from="1527852978344" duration="5511000" />
-      <workItem from="1528412064307" duration="17295000" />
+      <workItem from="1528412064307" duration="18549000" />
     </task>
     <task id="LOCAL-00001" summary="feuil + feuil detail + pronostiq">
       <created>1527290913999</created>
@@ -944,18 +608,33 @@
       <option name="project" value="LOCAL" />
       <updated>1527940705007</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/alaawerda/Russia2018&#10;&#10;# Conflicts:&#10;#&#9;src/WorldCup/RussiaBundle/Entity/Stade.php">
+      <created>1528667355025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528667355025</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/alaawerda/Russia2018&#10;&#10;# Conflicts:&#10;#&#9;src/WorldCup/RussiaBundle/Entity/Stade.php">
+      <created>1528667564732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528667564732</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132393000" />
+    <option name="totallyTimeSpent" value="133647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036308624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35188216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -965,7 +644,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1023,13 +701,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1449,14 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/arbitre/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1581,6 +1244,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3092">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldCup/RussiaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding />
         </state>
       </provider>
