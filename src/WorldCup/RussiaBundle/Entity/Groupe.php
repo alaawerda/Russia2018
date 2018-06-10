@@ -22,11 +22,27 @@ class Groupe
     private $id;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="numero", type="integer")
+     * @ORM\Column(name="nom", type="string", length=255)
      */
-    private $numero;
+    private $nom;
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
 
 
     /**
@@ -39,28 +55,11 @@ class Groupe
         return $this->id;
     }
 
-    /**
-     * Set numero
-     *
-     * @param integer $numero
-     *
-     * @return Groupe
-     */
-    public function setNumero($numero)
-    {
-        $this->numero = $numero;
-    
-        return $this;
-    }
-
-    /**
-     * Get numero
-     *
-     * @return integer
-     */
-    public function getNumero()
-    {
-        return $this->numero;
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->nom;
+        // to show the id of the Category in the select
+        // return $this->id;
     }
 }
 

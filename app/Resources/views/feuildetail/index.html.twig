@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Feuil detail list</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>matche</th>
+            <th>feuil</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for feuildetail in feuildetails %}
+            <tr>
+                <td><a href="{{ path('feuildetail_show', { 'id': feuildetail.matche.id , 'id2': feuildetail.Feuil.id }) }}">{{ feuildetail.matche.id }}</a></td>
+                <td>{{ feuildetail.Feuil.id }}</td>
+
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('feuildetail_show', { 'id': feuildetail.matche.id , 'id2': feuildetail.Feuil.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('feuildetail_edit', { 'id': feuildetail.matche.id , 'id2': feuildetail.Feuil.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('feuildetail_new') }}">Create a new feuildetail</a>
+        </li>
+    </ul>
+{% endblock %}

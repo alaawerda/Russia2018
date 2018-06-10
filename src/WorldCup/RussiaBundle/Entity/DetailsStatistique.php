@@ -15,7 +15,7 @@ class DetailsStatistique
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="integer")http://www.tunisietravail.net/attijari-bank-recherche-plusieurs-profils-63376/
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -30,7 +30,7 @@ class DetailsStatistique
     /**
      * @var string
      *
-     * @ORM\Column(name="temps", type="string", length=255)
+     * @ORM\Column(name="temps", type="integer", )
      */
     private $temps;
 
@@ -40,6 +40,29 @@ class DetailsStatistique
      * @ORM\Column(name="type", type="string", length=255)
      */
     private $type;
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=999999)
+     */
+    private $description;
 
 
     /**
@@ -109,6 +132,22 @@ class DetailsStatistique
     }
 
     /**
+     * @return string
+     */
+    public function getEquipe()
+    {
+        return $this->equipe;
+    }
+
+    /**
+     * @param string $equipe
+     */
+    public function setEquipe($equipe)
+    {
+        $this->equipe = $equipe;
+    }
+
+    /**
      * @param mixed $matche
      */
     public function setMatche($matche)
@@ -116,6 +155,33 @@ class DetailsStatistique
         $this->matche = $matche;
     }
 
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
 
+    private $equipe;
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Joueur", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
+
+    private $joueur;
+
+    /**
+     * @return mixed
+     */
+    public function getJoueur()
+    {
+        return $this->joueur;
+    }
+
+    /**
+     * @param mixed $joueur
+     */
+    public function setJoueur($joueur)
+    {
+        $this->joueur = $joueur;
+    }
 }
 

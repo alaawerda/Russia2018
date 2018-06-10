@@ -1,0 +1,24 @@
+feuil_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:Feuil:index" }
+    methods:  GET
+
+feuil_show:
+    path:     /{id}/show
+    defaults: { _controller: "WorldCupRussiaBundle:Feuil:show" }
+    methods:  GET
+
+feuil_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:Feuil:new" }
+    methods:  [GET, POST]
+
+feuil_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:Feuil:edit" }
+    methods:  [GET, POST]
+
+feuil_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:Feuil:delete" }
+    methods:  DELETE

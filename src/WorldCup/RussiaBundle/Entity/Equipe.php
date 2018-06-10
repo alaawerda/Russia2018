@@ -28,11 +28,7 @@ class Equipe
      */
     private $entraineur;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $groupe;
+
 
     /**
      * @var string
@@ -40,6 +36,31 @@ class Equipe
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
+
+
+
+
+    /**
+     * @return string
+     */
+    public function getLogo()
+    {
+        return $this->logo;
+    }
+
+    /**
+     * @param string $logo
+     */
+    public function setLogo($logo)
+    {
+        $this->logo = $logo;
+    }
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="logo", type="string", length=255)
+     */
+    private $logo;
 
     /**
      * @var int
@@ -129,6 +150,7 @@ class Equipe
         // to show the id of the Category in the select
         // return $this->id;
     }
+
 
 
 }

@@ -28,59 +28,49 @@ class Statistique
     private $matche;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="tirs", type="string", length=255)
+     * @ORM\Column(name="tirs", type="integer")
      */
     private $tirs;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="corners", type="string", length=255)
+     * @ORM\Column(name="corners", type="integer")
      */
     private $corners;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="cartonsJaunes", type="string", length=255)
+     * @ORM\Column(name="cartonsJaunes", type="integer")
      */
     private $cartonsJaunes;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="cartonsRouges", type="string", length=255)
+     * @ORM\Column(name="cartonsRouges", type="integer")
      */
     private $cartonsRouges;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="possessionsDeBalleEquipeA", type="string", length=255)
+     * @ORM\Column(name="possessionsDeBalle", type="integer")
      */
-    private $possessionsDeBalleEquipeA;
+    private $possessionsDeBalle;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="possessionsDeBalleEquipeB", type="string", length=255)
+     * @ORM\Column(name="buts", type="integer")
      */
-    private $possessionsDeBalleEquipeB;
+    private $buts;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="saves", type="string", length=255)
-     */
-    private $saves;
-
-
-    /**
-     * Get id
-     *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -88,171 +78,11 @@ class Statistique
     }
 
     /**
-     * Set tirs
-     *
-     * @param string $tirs
-     *
-     * @return Statistique
+     * @param int $id
      */
-    public function setTirs($tirs)
+    public function setId($id)
     {
-        $this->tirs = $tirs;
-    
-        return $this;
-    }
-
-    /**
-     * Get tirs
-     *
-     * @return string
-     */
-    public function getTirs()
-    {
-        return $this->tirs;
-    }
-
-    /**
-     * Set corners
-     *
-     * @param string $corners
-     *
-     * @return Statistique
-     */
-    public function setCorners($corners)
-    {
-        $this->corners = $corners;
-    
-        return $this;
-    }
-
-    /**
-     * Get corners
-     *
-     * @return string
-     */
-    public function getCorners()
-    {
-        return $this->corners;
-    }
-
-    /**
-     * Set cartonsJaunes
-     *
-     * @param string $cartonsJaunes
-     *
-     * @return Statistique
-     */
-    public function setCartonsJaunes($cartonsJaunes)
-    {
-        $this->cartonsJaunes = $cartonsJaunes;
-    
-        return $this;
-    }
-
-    /**
-     * Get cartonsJaunes
-     *
-     * @return string
-     */
-    public function getCartonsJaunes()
-    {
-        return $this->cartonsJaunes;
-    }
-
-    /**
-     * Set cartonsRouges
-     *
-     * @param string $cartonsRouges
-     *
-     * @return Statistique
-     */
-    public function setCartonsRouges($cartonsRouges)
-    {
-        $this->cartonsRouges = $cartonsRouges;
-    
-        return $this;
-    }
-
-    /**
-     * Get cartonsRouges
-     *
-     * @return string
-     */
-    public function getCartonsRouges()
-    {
-        return $this->cartonsRouges;
-    }
-
-    /**
-     * Set possessionsDeBalleEquipeA
-     *
-     * @param string $possessionsDeBalleEquipeA
-     *
-     * @return Statistique
-     */
-    public function setPossessionsDeBalleEquipeA($possessionsDeBalleEquipeA)
-    {
-        $this->possessionsDeBalleEquipeA = $possessionsDeBalleEquipeA;
-    
-        return $this;
-    }
-
-    /**
-     * Get possessionsDeBalleEquipeA
-     *
-     * @return string
-     */
-    public function getPossessionsDeBalleEquipeA()
-    {
-        return $this->possessionsDeBalleEquipeA;
-    }
-
-    /**
-     * Set possessionsDeBalleEquipeB
-     *
-     * @param string $possessionsDeBalleEquipeB
-     *
-     * @return Statistique
-     */
-    public function setPossessionsDeBalleEquipeB($possessionsDeBalleEquipeB)
-    {
-        $this->possessionsDeBalleEquipeB = $possessionsDeBalleEquipeB;
-    
-        return $this;
-    }
-
-    /**
-     * Get possessionsDeBalleEquipeB
-     *
-     * @return string
-     */
-    public function getPossessionsDeBalleEquipeB()
-    {
-        return $this->possessionsDeBalleEquipeB;
-    }
-
-    /**
-     * Set saves
-     *
-     * @param string $saves
-     *
-     * @return Statistique
-     */
-    public function setSaves($saves)
-    {
-        $this->saves = $saves;
-    
-        return $this;
-    }
-
-    /**
-     * Get saves
-     *
-     * @return string
-     */
-    public function getSaves()
-    {
-        return $this->saves;
+        $this->id = $id;
     }
 
     /**
@@ -271,6 +101,150 @@ class Statistique
         $this->matche = $matche;
     }
 
+    /**
+     * @return int
+     */
+    public function getTirs()
+    {
+        return $this->tirs;
+    }
+
+    /**
+     * @param int $tirs
+     */
+    public function setTirs($tirs)
+    {
+        $this->tirs = $tirs;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCorners()
+    {
+        return $this->corners;
+    }
+
+    /**
+     * @param int $corners
+     */
+    public function setCorners($corners)
+    {
+        $this->corners = $corners;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCartonsJaunes()
+    {
+        return $this->cartonsJaunes;
+    }
+
+    /**
+     * @param int $cartonsJaunes
+     */
+    public function setCartonsJaunes($cartonsJaunes)
+    {
+        $this->cartonsJaunes = $cartonsJaunes;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCartonsRouges()
+    {
+        return $this->cartonsRouges;
+    }
+
+    /**
+     * @param int $cartonsRouges
+     */
+    public function setCartonsRouges($cartonsRouges)
+    {
+        $this->cartonsRouges = $cartonsRouges;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPossessionsDeBalle()
+    {
+        return $this->possessionsDeBalle;
+    }
+
+    /**
+     * @param int $possessionsDeBalle
+     */
+    public function setPossessionsDeBalle($possessionsDeBalle)
+    {
+        $this->possessionsDeBalle = $possessionsDeBalle;
+    }
+
+    /**
+     * @return int
+     */
+    public function getButs()
+    {
+        return $this->buts;
+    }
+
+    /**
+     * @param int $buts
+     */
+    public function setButs($buts)
+    {
+        $this->buts = $buts;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSaves()
+    {
+        return $this->saves;
+    }
+
+    /**
+     * @param int $saves
+     */
+    public function setSaves($saves)
+    {
+        $this->saves = $saves;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEquipe()
+    {
+        return $this->equipe;
+    }
+
+    /**
+     * @param string $equipe
+     */
+    public function setEquipe($equipe)
+    {
+        $this->equipe = $equipe;
+    }
+
+
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="saves", type="integer")
+     */
+    private $saves;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
+     * */
+
+    private $equipe;
+
 
 }
-
