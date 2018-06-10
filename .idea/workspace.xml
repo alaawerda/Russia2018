@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d773977a-a818-4025-8f81-84ddf7719e27" name="Default" comment="feuil + feuil detail + pronostiq">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/show.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/edit.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Russia2018.iml" afterPath="$PROJECT_DIR$/.idea/Russia2018.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/matche/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Russia2018.iml" afterPath="$PROJECT_DIR$/.idea/Russia2018.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1294,7 +1294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110715000" />
+    <option name="totallyTimeSpent" value="110720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
