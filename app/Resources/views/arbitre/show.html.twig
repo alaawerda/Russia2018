@@ -1,48 +1,52 @@
-{% extends 'base.html.twig' %}
+{% extends 'backbase.html.twig' %}
 
 {% block content %}
     <h1>Arbitre</h1>
-
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ arbitre.id }}</td>
-            </tr>
-            <tr>
-                <th>Nom</th>
-                <td>{{ arbitre.nom }}</td>
-            </tr>
-            <tr>
-                <th>Prenom</th>
-                <td>{{ arbitre.prenom }}</td>
-            </tr>
-            <tr>
-                <th>Nationalite</th>
-                <td>{{ arbitre.nationalite }}</td>
-            </tr>
-            <tr>
-                <th>Confederations</th>
-                <td>{{ arbitre.confederations }}</td>
-            </tr>
-            <tr>
-                <th>Specialite</th>
-                <td>{{ arbitre.specialite }}</td>
-            </tr>
-        </tbody>
-    </table>
-
     <ul>
         <li>
             <a href="{{ path('arbitre_index') }}">Back to the list</a>
         </li>
-        <li>
-            <a href="{{ path('arbitre_edit', { 'id': arbitre.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
     </ul>
+<div class="panel-body">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover dataTables-example" >
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ arbitre.id }}</td>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <td>{{ arbitre.nom }}</td>
+                </tr>
+                <tr>
+                    <th>Prenom</th>
+                    <td>{{ arbitre.prenom }}</td>
+                </tr>
+                <tr>
+                    <th>Nationalite</th>
+                    <td>{{ arbitre.nationalite }}</td>
+                </tr>
+                <tr>
+                    <th>Confederations</th>
+                    <td>{{ arbitre.confederations }}</td>
+                </tr>
+                <tr>
+                    <th>Specialite</th>
+                    <td>{{ arbitre.specialite }}</td>
+                </tr>
+                <tr>
+                    <th>Modifier</th>
+                    <td><a href="{{ path('arbitre_edit', { 'id': arbitre.id }) }}">Edit</a></td>
+                </tr>
+                <tr>
+                    <th>Suppimer</th>
+                    <td>{{ form_start(delete_form) }}
+                        <input type="submit" value="Delete">
+                        {{ form_end(delete_form) }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 {% endblock %}

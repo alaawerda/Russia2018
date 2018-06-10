@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Stade
  *
  * @ORM\Table(name="stade")
- * @ORM\Entity(repositoryClass="WorldCup\RussiaBundle\Repository\StadeRepository")
+ * @ORM\Entity
  */
 class Stade
 {
@@ -55,6 +55,7 @@ class Stade
      *
      * @ORM\Column(name="longitude", type="float")
      */
+
     private $longitude;
 
     /**
@@ -63,10 +64,28 @@ class Stade
      * @ORM\Column(name="latitude", type="float")
      */
     private $latitude;
-
     /**
      * @return int
      */
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="product_image", fileNameProperty="imageName")
+     *
+     * @var File
+     */
+   /* private $imageFile;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image_name", type="string", length=255, nullable=true)
+     */
+    /*  private $imageName; */
+
+     /**
+      * @return int
+      */
     public function getId()
     {
         return $this->id;
@@ -130,7 +149,7 @@ class Stade
 
 
    /**
-     * @return string
+     g* @return string
      */
     public function getImage()
     {
