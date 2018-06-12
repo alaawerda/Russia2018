@@ -20,11 +20,15 @@
                 <!-- date de l article -->
                 <time datetime="2016-08-23" class="posts__date">{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</time>
                 <!-- titre de l'article -->
-                <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" "></a>
                 <h6 class="posts__title"><a href="{{ path('article_show',{'id' :article.id}) }}">{{ article.titre }}</a></h6>
 
+                <!-- image de l'article -->
+
+                <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" " style="width: 80%" width="100%"></a>
+
+
                 <!-- details article -->
-                <div class="posts__excerpt">
+                <div class="posts__excerpt" aria-valuemax="1">
                     {{ article.description }}
                 </div>
 

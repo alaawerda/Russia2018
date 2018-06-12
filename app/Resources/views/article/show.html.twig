@@ -2,32 +2,14 @@
 
 {% block content %}
     <h1>{{ article.titre }}</h1>
+    <a href="{{ path('article_index') }}" class="posts__cta"> aaaa</a>
 
-    <table>
-        <tbody>
-            <tr hidden>
-                <th>Id</th>
-                <td>{{ article.id }}</td>
-            </tr>
-            <tr>
-                <th>Description                    </th>
-                <td>           {{ article.description }}</td>
-            </tr>
-            <tr>
-                <th>Titre                       </th>
-                <td>           {{ article.titre }}</td>
-            </tr>
-            <tr>
-                <th>Date                       </th>
-                <td>         {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-        </tbody>
-    </table>
+    <h6 style="margin-bottom: inherit; line-height: inherit"> {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} </h6>
+    <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" " style="width: 80%" width="100%"></a>
+    <h4 style="margin-top: 35px">           {{ article.description }}</h4>
 
-    <ul>
-        <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
-        </li>
+
+
         <li hidden>
             <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
         </li>
@@ -36,5 +18,5 @@
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
         </li>
-    </ul>
+    <
 {% endblock content %}
