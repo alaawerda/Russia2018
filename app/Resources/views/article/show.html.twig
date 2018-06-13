@@ -1,10 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
-    <h1>{{ article.titre }}</h1>
-    <a href="{{ path('article_index') }}" class="posts__cta"> aaaa</a>
 
-    <h6 style="margin-bottom: inherit; line-height: inherit"> {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} </h6>
+{% block content %}
+
+
+    <h1>{{ article.titre }}</h1>
+    <button href="{{ path('article_index') }}" class="" style="
+    margin-left: 890px"> Back </button>
+
+    <a href="#" class="posts__cta"></a>
+
+    <h6 style="margin-bottom: inherit; line-height: inherit" class=""> {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} </h6>
     <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" " style="width: 80%" width="100%"></a>
     <h4 style="margin-top: 35px">           {{ article.description }}</h4>
 
@@ -18,5 +24,7 @@
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
         </li>
-    <
+
+
+
 {% endblock content %}
