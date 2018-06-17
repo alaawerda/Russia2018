@@ -1,8 +1,15 @@
 {% extends 'backbase.html.twig' %}
+
     {% block stylesheet %}
+        <!-- Favicons
+        ================================================== -->
+
+
+
     {% endblock %}
 {% block content %}
     <h1>Matches list</h1>
+
     <div class="row">
         <div class="col-lg-12 animatedParent animateOnce z-index-50">
             <div class="panel panel-default animated fadeInUp">
@@ -24,8 +31,7 @@
                                 <th>Date</th>
                                 <th>Etat</th>
                                 <th>Phase</th>
-                                <th>Modifier</th>
-                                <th>Afficher</th>
+
                             </tr>
                             </thead>
                             <tbody>
@@ -34,21 +40,23 @@
                                     <td><a href="{{ path('matche_show', { 'id': matche.id }) }}">{{ matche.id }}</a></td>
                                     <td>{{ matche.equipeA }}  <big>VS</big>  {{ matche.equipeB }}  </td>
                                     <td>{{ matche.groupe }}  </td>
+
                                     <td>{% if matche.date %}{{ matche.date|date('Y-m-d H:i') }}{% endif %}</td>
                                     <td>{{ matche.etat }}</td>
+
                                     <td>{{ matche.phase }}</td>
                                     <td>
                                         <ul>
 
                                             <li>
-                                                <a href="{{ path('matche_edit', { 'id': matche.id }) }}">edit</a>
+                                                <a href="{{ path('detailsstatistique_new', { 'idmatch': matche.id }) }}">Ajouter Statistiques</a>
                                             </li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul>
                                             <li>
-                                                <a href="{{ path('matche_show', { 'id': matche.id }) }}">show</a>
+                                                <a href="">show</a>
                                             </li>
 
                                         </ul>
@@ -64,6 +72,8 @@
             </div>
         </div>
     </div>
+
+
 {% endblock content %}
 {% block js %}
 

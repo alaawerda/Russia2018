@@ -22,3 +22,15 @@ matche_delete:
     path:     /{id}/delete
     defaults: { _controller: "WorldCupRussiaBundle:Matche:delete" }
     methods:  DELETE
+
+
+match_list:
+    path:     /test
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:list" }
+    methods:  [GET, POST]
+
+match_listt:
+    path:     /testt
+    defaults: { _controller: "WorldCupRussiaBundle:Matche:listt" }
+    methods:  [GET, POST]
+

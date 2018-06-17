@@ -45,3 +45,7 @@ world_cup_russia_backpage:
 world_cup_russia_matche:
     resource: "@WorldCupRussiaBundle/Resources/config/routing/matche.yml"
     prefix:   /matche
+
+world_cup_russia_detailsstatistique:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/detailsstatistique.yml"
+        prefix:   /detailsstatistique

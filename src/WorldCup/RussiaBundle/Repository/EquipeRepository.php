@@ -10,4 +10,48 @@ namespace WorldCup\RussiaBundle\Repository;
  */
 class EquipeRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function Selects2()
+    {
+        $q = $this->getEntityManager()
+            ->createQuery("SELECT u FROM 
+      WorldCupRussiaBundle:Equipe u
+           ");
+        return $q->getResult();
+
+    }
+
+    public function Selects($groupe,$phase)
+    {
+        $q = $this->getEntityManager()
+            ->createQuery("SELECT u FROM
+      WorldCupRussiaBundle:Equipe u
+            WHERE u.groupe = :groupe and u.phase = :phase")->setParameter('groupe',$groupe)->setParameter('phase',$phase);
+        return $q->getResult();
+
+    }
+
+    public function Selects3($groupe,$equipeA,$phasee)
+    {
+        $q = $this->getEntityManager()
+            ->createQuery("SELECT u FROM
+      WorldCupRussiaBundle:Equipe u
+            WHERE u.groupe = :groupe and u.id != :equipeA and u.phase = :phase ")
+            ->setParameter('groupe',$groupe)
+            ->setParameter('equipeA',$equipeA)
+            ->setParameter('phase',$phasee)
+        ;
+        return $q->getResult();
+
+    }
+
+    public function selectEquipe($id)
+    {
+        $q = $this->getEntityManager()
+            ->createQuery("SELECT u FROM 
+      WorldCupRussiaBundle:Equipe u
+         WHERE u.id=: id  ")->setParameter('id',$id);
+        return $q->getResult();
+
+    }
 }
