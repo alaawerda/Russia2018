@@ -36,20 +36,15 @@
     <!-- Mouldifi core stylesheet -->
     <link href="{{ asset('back/css/mouldifi-core.css') }}" rel="stylesheet">
     <!-- /mouldifi core stylesheet -->
-    <link href="{{ asset('back/css/plugins/select2/select2.css') }}" rel="stylesheet">
 
     <link href="{{ asset('back/css/mouldifi-forms.css') }}" rel="stylesheet">
     <link href="{{ asset('back/css/plugins/datatables/jquery.dataTables.css') }}" rel="stylesheet">
     <link href="{{ asset('back/js/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css') }}" rel="stylesheet">
-    <link href="{{ asset('back/css/plugins/datepicker/bootstrap-datepicker.css') }}" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="{{ asset('back/js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('back/js/respond.min.js') }}"></script>
-
-
-
     <![endif]-->
 
     <!--[if lte IE 8]>
@@ -352,11 +347,13 @@
       <script src="js/respond.min.js"></script>
 <!--Load JQuery-->
 <script src="{{ asset('back/js/jquery.min.js') }}"></script>
+<!-- Load CSS3 Animate It Plugin JS -->
 <script src="{{ asset('back/js/plugins/css3-animate-it-plugin/css3-animate-it.js') }}"></script>
 <script src="{{ asset('back/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/metismenu/jquery.metisMenu.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery-ui.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery.blockUI.js') }}"></script>
+<!--Float Charts-->
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.resize.min.js') }}"></script>
@@ -365,7 +362,6 @@
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.time.min.js') }}"></script>
 <script src="{{ asset('back/js/functions.js') }}"> </script>
 
-<script src="{{ asset('back/js/plugins/select2/select2.full.min.js') }}"></script>
 
 
 <script src="{{ asset('back/js/jquery.min.js') }}"></script>
@@ -391,8 +387,6 @@
 <script src="{{ asset('back/js/plugins/datatables/vfs_fonts.js') }}"></script>
 <script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.html5.js') }}"></script>
 <script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js') }}"></script>
-
-
 {% block js %}
 
 {% endblock %}

@@ -12,7 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Equipe
 {
-
     /**
      * @var int
      *
@@ -28,29 +27,6 @@ class Equipe
      * @ORM\Column(name="entraineur", type="string", length=255)
      */
     private $entraineur;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $groupe;
-
-    /**
-     * @return mixed
-     */
-    public function getGroupe()
-    {
-        return $this->groupe;
-    }
-
-    /**
-     * @param mixed $groupe
-     */
-    public function setGroupe($groupe)
-    {
-        $this->groupe = $groupe;
-    }
-
 
 
 
@@ -87,35 +63,12 @@ class Equipe
     private $logo;
 
     /**
-     * @return int
-     */
-    public function getPhase()
-    {
-        return $this->phase;
-    }
-
-    /**
-     * @param int $phase
-     */
-    public function setPhase($phase)
-    {
-        $this->phase = $phase;
-    }
-
-    /**
      * @var int
      *
      * @ORM\Column(name="point", type="integer")
      */
     private $point;
 
-
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="phase", type="string"  , length=255)
-     */
-    private $phase;
 
     /**
      * Get id
@@ -190,8 +143,6 @@ class Equipe
     {
         $this->entraineur = $entraineur;
     }
-
-
 
     public function __toString(){
         // to show the name of the Category in the select
