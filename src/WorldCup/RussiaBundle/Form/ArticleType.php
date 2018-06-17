@@ -5,6 +5,9 @@ namespace WorldCup\RussiaBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class ArticleType extends AbstractType
 {
@@ -13,7 +16,17 @@ class ArticleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('description')->add('titre')->add('date')->add('equipe')->add('categorie');
+        $builder
+            ->add('description')
+            ->add('titre')
+            ->add('date')
+            ->add('equipe')
+            ->add('categorie')
+            ->add('imageFile', VichFileType::class, array(
+                'required'      => true,
+                'allow_delete'  => true, // not mandatory, default is true
+                'download_link' => true, // not mandatory, default is true
+            ));
     }/**
      * {@inheritdoc}
      */

@@ -1,0 +1,47 @@
+{% extends 'backbase.html.twig' %}
+
+{% block content %}
+    <h1>Stades list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Capacite</th>
+                <th>Nom</th>
+                <th>Image</th>
+                <th>Longitude</th>
+                <th>Latitude</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for stade in stades %}
+            <tr>
+                <td><a href="{{ path('stade_show', { 'id': stade.id }) }}">{{ stade.id }}</a></td>
+                <td>{{ stade.capacite }}</td>
+                <td>{{ stade.nom }}</td>
+                <td>{{ stade.image }}</td>
+                <td>{{ stade.longitude }}</td>
+                <td>{{ stade.latitude }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('stade_show', { 'id': stade.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('stade_edit', { 'id': stade.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('stade_new') }}">Create a new stade</a>
+        </li>
+    </ul>
+{% endblock %}

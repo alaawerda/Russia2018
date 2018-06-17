@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Arbitre
  *
  * @ORM\Table(name="arbitre")
- * @ORM\Entity(repositoryClass="WorldCup\RussiaBundle\Repository\ArbitreRepository")
+ * @ORM\Entity
  */
 class Arbitre
 {
@@ -21,12 +21,7 @@ class Arbitre
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="nationnalite", type="string", length=255)
-     */
-    private $nationnalite;
+
 
     /**
      * @var string
@@ -42,11 +37,29 @@ class Arbitre
      */
     private $prenom;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nationalite", type="string", length=255)
+     */
+    private $nationalite;
 
     /**
-     * Get id
+     * @var string
      *
-     * @return integer
+     * @ORM\Column(name="confederations", type="string", length=255)
+     */
+    private $confederations;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="specialite", type="string", length=255)
+     */
+    private $specialite;
+
+    /**
+     * @return int
      */
     public function getId()
     {
@@ -54,46 +67,14 @@ class Arbitre
     }
 
     /**
-     * Set nationnalite
-     *
-     * @param string $nationnalite
-     *
-     * @return Arbitre
+     * @param int $id
      */
-    public function setNationnalite($nationnalite)
+    public function setId($id)
     {
-        $this->nationnalite = $nationnalite;
-    
-        return $this;
+        $this->id = $id;
     }
 
     /**
-     * Get nationnalite
-     *
-     * @return string
-     */
-    public function getNationnalite()
-    {
-        return $this->nationnalite;
-    }
-
-    /**
-     * Set nom
-     *
-     * @param string $nom
-     *
-     * @return Arbitre
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-    
-        return $this;
-    }
-
-    /**
-     * Get nom
-     *
      * @return string
      */
     public function getNom()
@@ -102,27 +83,78 @@ class Arbitre
     }
 
     /**
-     * Set prenom
-     *
-     * @param string $prenom
-     *
-     * @return Arbitre
+     * @param string $nom
      */
-    public function setPrenom($prenom)
+    public function setNom($nom)
     {
-        $this->prenom = $prenom;
-    
-        return $this;
+        $this->nom = $nom;
     }
 
     /**
-     * Get prenom
-     *
      * @return string
      */
     public function getPrenom()
     {
         return $this->prenom;
     }
+
+    /**
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNationalite()
+    {
+        return $this->nationalite;
+    }
+
+    /**
+     * @param string $nationalite
+     */
+    public function setNationalite($nationalite)
+    {
+        $this->nationalite = $nationalite;
+    }
+
+    /**
+     * @return string
+     */
+    public function getConfederations()
+    {
+        return $this->confederations;
+    }
+
+    /**
+     * @param string $confederations
+     */
+    public function setConfederations($confederations)
+    {
+        $this->confederations = $confederations;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSpecialite()
+    {
+        return $this->specialite;
+    }
+
+    /**
+     * @param string $specialite
+     */
+    public function setSpecialite($specialite)
+    {
+        $this->specialite = $specialite;
+    }
+
+
+
 }
 

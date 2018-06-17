@@ -22,7 +22,19 @@ class ArticleController extends Controller
 
         $articles = $em->getRepository('WorldCupRussiaBundle:Article')->findAll();
 
-        return $this->render('article/index.html.twig', array(
+        return $this->render('article/testaff.html.twig', array(
+            'articles' => $articles,
+        ));
+    }
+
+
+    public function indexbackAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $articles = $em->getRepository('WorldCupRussiaBundle:Article')->findAll();
+
+        return $this->render('article/indexback.html.twig', array(
             'articles' => $articles,
         ));
     }
@@ -42,7 +54,7 @@ class ArticleController extends Controller
             $em->persist($article);
             $em->flush();
 
-            return $this->redirectToRoute('article_show', array('id' => $article->getId()));
+            return $this->redirectToRoute('article_showback', array('id' => $article->getId()));
         }
 
         return $this->render('article/new.html.twig', array(
@@ -60,6 +72,16 @@ class ArticleController extends Controller
         $deleteForm = $this->createDeleteForm($article);
 
         return $this->render('article/show.html.twig', array(
+            'article' => $article,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+    public function showbackAction(Article $article)
+    {
+        $deleteForm = $this->createDeleteForm($article);
+
+        return $this->render('article/showback.html.twig', array(
             'article' => $article,
             'delete_form' => $deleteForm->createView(),
         ));

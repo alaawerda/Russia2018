@@ -10,9 +10,15 @@ world_cup_russia_commentairearticle:
     resource: "@WorldCupRussiaBundle/Resources/config/routing/commentairearticle.yml"
     prefix:   /commentairearticle
 
-world_cup_russia_fichier:
-        resource: "@WorldCupRussiaBundle/Resources/config/routing/fichier.yml"
-        prefix:   /fichier
+world_cup_russia_arbitre:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/arbitre.yml"
+        prefix:   /arbitre
+world_cup_russia_stade:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/stade.yml"
+        prefix:   /stade
+world_cup_russia_ville:
+        resource: "@WorldCupRussiaBundle/Resources/config/routing/ville.yml"
+        prefix:   /ville
 
 world_cup_russia_feuil:
         resource: "@WorldCupRussiaBundle/Resources/config/routing/feuil.yml"

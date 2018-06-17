@@ -1,0 +1,24 @@
+arbitre_index:
+    path:     /
+    defaults: { _controller: "WorldCupRussiaBundle:Arbitre:index" }
+    methods:  GET
+
+arbitre_show:
+    path:     /{id}/show
+    defaults: { _controller: "WorldCupRussiaBundle:Arbitre:show" }
+    methods:  GET
+
+arbitre_new:
+    path:     /new
+    defaults: { _controller: "WorldCupRussiaBundle:Arbitre:new" }
+    methods:  [GET, POST]
+
+arbitre_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WorldCupRussiaBundle:Arbitre:edit" }
+    methods:  [GET, POST]
+
+arbitre_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WorldCupRussiaBundle:Arbitre:delete" }
+    methods:  DELETE

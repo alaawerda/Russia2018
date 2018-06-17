@@ -23,8 +23,9 @@ class Equipe
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Entraineur", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @var string
+     *
+     * @ORM\Column(name="entraineur", type="string", length=255)
      */
     private $entraineur;
 
