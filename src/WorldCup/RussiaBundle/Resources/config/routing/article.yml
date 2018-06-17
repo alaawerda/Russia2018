@@ -11,7 +11,7 @@ article_indexback:
 article_show:
     path:     /{id}/show
     defaults: { _controller: "WorldCupRussiaBundle:Article:show" }
-    methods:  GET
+    methods:  [GET, POST]
 
 article_showback:
     path:     /{id}/showback
@@ -32,3 +32,8 @@ article_delete:
     path:     /{id}/delete
     defaults: { _controller: "WorldCupRussiaBundle:Article:delete" }
     methods:  DELETE
+
+article_max:
+    path:     /max
+    defaults: { _controller: "WorldCupRussiaBundle:Article:GetTopCommentedTopic" }
+    methods:  GET

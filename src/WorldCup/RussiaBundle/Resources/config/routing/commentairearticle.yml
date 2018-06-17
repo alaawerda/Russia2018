@@ -1,5 +1,5 @@
 commentairearticle_index:
-    path:     /
+    path:     /{id}
     defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:index" }
     methods:  GET
 
@@ -9,7 +9,7 @@ commentairearticle_show:
     methods:  GET
 
 commentairearticle_new:
-    path:     /new
+    path:     /new/{idd}
     defaults: { _controller: "WorldCupRussiaBundle:CommentaireArticle:new" }
     methods:  [GET, POST]
 

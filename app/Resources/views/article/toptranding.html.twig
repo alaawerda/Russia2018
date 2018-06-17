@@ -1,0 +1,19 @@
+<div class="widget__content card__content">
+    <ul class="posts posts--simple-list">
+        {% for t in topics %}
+        <li class="posts__item posts__item--category-2">
+
+                <a href="{{ path('article_show',{'id' :t.id}) }}"> <img src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ t.imageName) }}" alt="" style="width: 500px;height: 200px"></a>
+
+            <div class="posts__inner">
+                <div class="posts__cat">
+                    <span class="label posts__cat-label" style="margin-top: 5px">{{t.categorie}}</span>
+                </div>
+                <h6 class="posts__title"><a href="{{ path('article_show',{'id' :t.id}) }}">{{ t.titre }}</a></h6>
+                <time datetime="2016-08-23" class="posts__date">{{ t.date|date('Y-m-d') }}</time><br/>
+               <small>{{ t.commmentaires|length }}{% if t.commmentaires|length==1 %} commentaire {% else %} commentaires{% endif %}</small>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -22,7 +22,7 @@ class CommentaireArticle
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Article", inversedBy="id")
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Article", inversedBy="id",cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $article;
@@ -33,6 +33,14 @@ class CommentaireArticle
      * @ORM\Column(name="contenu", type="string", length=700)
      */
     private $contenu;
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime")
+     */
+    private $date;
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\User", inversedBy="id")
@@ -122,5 +130,22 @@ class CommentaireArticle
     {
         return $this->user;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param mixed $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
+
 }
 

@@ -58,6 +58,17 @@ class Article
      */
     private $date;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user",referencedColumnName="id")
+     */
+
+    private $user;
+
+    /**
+     * @ORM\OneToMany(targetEntity="CommentaireArticle", mappedBy="article",cascade={"persist", "remove"})
+     */
+    private $commmentaires;
 
     /**
      * Get id
@@ -67,6 +78,14 @@ class Article
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     /**
@@ -228,6 +247,24 @@ class Article
     }
 
     /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+
+
+    /**
      * Get imageName
      *
      * @return string
@@ -243,6 +280,22 @@ class Article
      * @var \DateTime
      */
     private $updatedAt;
+
+    /**
+     * @return mixed
+     */
+    public function getCommmentaires()
+    {
+        return $this->commmentaires;
+    }
+
+    /**
+     * @param mixed $commmentaires
+     */
+    public function setCommmentaires($commmentaires)
+    {
+        $this->commmentaires = $commmentaires;
+    }
 
 
 }

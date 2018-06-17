@@ -1,0 +1,21 @@
+
+    {% for com in commentaireArticles %}
+        <li class="comments__item">
+            <div class="comments__inner">
+                <header class="comment__header">
+                    <div class="comment__author">
+                        <figure class="comment__author-avatar">
+                            <img src="assets\images\samples\avatar-9.jpg" alt="">
+                        </figure>
+                        <div class="comment__author-info">
+                            <h5 class="comment__author-name"> {{  com.user.username }}</h5>
+                            <time class="comment__post-date" datetime="2016-08-23"><small>{{ com.date|date("d M Y  h:s a") }}</small></time>
+                        </div>
+                    </div>
+                </header>
+                <div class="comment__body" style="font-size: medium;font-style: italic;font-family: 'Times New Roman';">
+                    {{ com.contenu }}
+                </div>
+            </div>
+        </li>
+    {% endfor %}

@@ -3,28 +3,123 @@
 
 {% block content %}
 
+    <div class="row">
+        <!-- Content -->
+        <div class="content col-md-8">
+            <!-- Article -->
+            <article class="card card--lg post post--single">
+                <figure class="post__thumbnail">
+                    <img src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt="" style="width: 773px; height: 434px">
+                </figure>
+                <div class="card__content">
+                    <div class="post__category">
+                        <span class="label posts__cat-label"> {{ article.categorie }}</span>
+                    </div>
+                    <header class="post__header">
+                        <h2 class="post__title">{{ article.titre }}</h2>
+                        <ul class="post__meta meta">
+                            <li class="meta__item meta__item--date"><time datetime="2017-08-23">{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</time></li>
+                            <li class="meta__item meta__item--comments"><a href="#">{{ count }}</a></li>
+                        </ul>
+                    <div class="post__content">
+                        <p style="font-size: large;font-style: italic;font-family: 'Times New Roman';">{{ article.description }}</p>
+                    </div>
+                    </header>
+                </div>
+            <!-- Post Comments -->
+            <div class="post-comments card card--lg">
+                <header class="post-commments__header card__header">
+                    <h4>Comments ({{ count }})</h4>
+                </header>
 
-    <h1>{{ article.titre }}</h1>
-    <button href="{{ path('article_index') }}" class="" style="
-    margin-left: 890px"> Back </button>
+                <div id="result" class="post-comments__content card__content">
+                    <ul class="comments">
+                    {% if (count!=0) %}
+                    {{ render(controller('WorldCupRussiaBundle:CommentaireArticle:index',{'id':article.id})) }}
+                    {% else %}
+                    Cet Article n'a pas encore de commentaire
+                    {% endif %}
+                    </ul>
+                </div>
 
-    <a href="#" class="posts__cta"></a>
+            </div>
+            <!-- Post Comment Form -->
+            <div class="post-comment-form card card--lg">
+                <header class="post-comment-form__header card__header">
+                    {% if (count!=0) %}
+                    <h4>Ecrire votre avis</h4>
+                    {% else %}
+                    <h4>Soyez le premier à réagir sur cet article</h4>
+                    {% endif %}
+                </header>
+                <div class="post-comment-form__content card__content">
+                    <form method="POST" action="" id="form1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="input-name">Name</label>
+                                    <input type="text" id="input-name" name="input-name" class="form-control" value="{{ app.user }}" disabled>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="input-email" >Email</label>
+                                    <input type="email" id="input-email" name="input-email" class="form-control" value="{{ app.user.email }}" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="textarea-comment">Your Comment</label>
+                            <textarea name="textarea-comment" id="textarea-comment" rows="7" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" onclick="ajouter()" class="btn btn-default btn-block btn-lg" value="Ajouter" form="form1"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Post Comment Form / End -->
+            </article>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar col-md-4">
+            <!-- Widget: Popular News -->
+            <aside class="widget widget--sidebar card widget-popular-posts">
+                <div class="widget__title card__header">
+                    <h4>Articles Populaires</h4>
+                </div>
+                {{ render(controller('WorldCupRussiaBundle:Article:GetTopCommentedTopic')) }}
 
-    <h6 style="margin-bottom: inherit; line-height: inherit" class=""> {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} </h6>
-    <img class="img-responsive"  src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=" " style="width: 80%" width="100%"></a>
-    <h4 style="margin-top: 35px">           {{ article.description }}</h4>
+            </aside>
+            <!-- Widget: Popular News / End -->
+        </div>
+    </div>
+<script>
+    function ajouter(){
+        var form = document.getElementById("form1") ;
+        var formURL = "{{ path('commentairearticle_new',{'idd' :article.id})}}";
+        var formData = new FormData(form);
+        $.ajax({
+            url: formURL,
+            type: 'POST',
+            data: formData,
+            mimeType: "multipart/form-data",
+            contentType: false,
+        }).done(function (response) {
+            alert("pnerfpnerf")
+                $('#result').html(response);
 
+        });
+    }
 
-
-        <li hidden>
-            <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
-        </li>
-        <li hidden>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-
-
-
+</script>
 {% endblock content %}
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,8 @@ namespace WorldCup\RussiaBundle\Controller;
 use WorldCup\RussiaBundle\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use WorldCup\RussiaBundle\Entity\User;
+use WorldCup\RussiaBundle\WorldCupRussiaBundle;
 
 /**
  * Article controller.
@@ -20,7 +22,7 @@ class ArticleController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $articles = $em->getRepository('WorldCupRussiaBundle:Article')->findAll();
+        $articles = $em->getRepository('WorldCupRussiaBundle:Article')->triArticleParDateDesc();
 
         return $this->render('article/testaff.html.twig', array(
             'articles' => $articles,
@@ -51,6 +53,10 @@ class ArticleController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $user = new User();
+            $user->setId(1);
+            $user = $em->getRepository('WorldCupRussiaBundle:User')->find($user);
+            $article->setUser($user);
             $em->persist($article);
             $em->flush();
 
@@ -70,9 +76,9 @@ class ArticleController extends Controller
     public function showAction(Article $article)
     {
         $deleteForm = $this->createDeleteForm($article);
-
+        $nbcom= $article->getCommmentaires()->count();
         return $this->render('article/show.html.twig', array(
-            'article' => $article,
+            'article' => $article,'count'=>$nbcom,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -85,6 +91,20 @@ class ArticleController extends Controller
             'article' => $article,
             'delete_form' => $deleteForm->createView(),
         ));
+    }
+    public function GetTopRatedTopic()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+    }
+    public function GetTopCommentedTopicAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $topics= $em->getRepository('WorldCupRussiaBundle:Article')->getMaxcommentedArticles();
+        return $this->render('article/toptranding.html.twig',array('topics'=>$topics));
+
+
+
     }
 
     /**
@@ -143,4 +163,6 @@ class ArticleController extends Controller
             ->getForm()
         ;
     }
+
+
 }

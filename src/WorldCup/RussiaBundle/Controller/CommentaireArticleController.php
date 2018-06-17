@@ -2,9 +2,13 @@
 
 namespace WorldCup\RussiaBundle\Controller;
 
+use Symfony\Component\Validator\Constraints\DateTime;
+use WorldCup\RussiaBundle\Entity\Article;
 use WorldCup\RussiaBundle\Entity\CommentaireArticle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use WorldCup\RussiaBundle\Entity\User;
+use WorldCup\RussiaBundle\WorldCupRussiaBundle;
 
 /**
  * Commentairearticle controller.
@@ -16,15 +20,16 @@ class CommentaireArticleController extends Controller
      * Lists all commentaireArticle entities.
      *
      */
-    public function indexAction()
+    public function indexAction($id)
     {
+
         $em = $this->getDoctrine()->getManager();
 
-        $commentaireArticles = $em->getRepository('WorldCupRussiaBundle:CommentaireArticle')->findAll();
+        $article=$em->getRepository('WorldCupRussiaBundle:Article')->find($id);
 
-        return $this->render('commentairearticle/index.html.twig', array(
-            'commentaireArticles' => $commentaireArticles,
-        ));
+        return $this->render('commentairearticle/Commentaires.html.twig',array("commentaireArticles"=>$article->getCommmentaires()));
+
+
     }
 
     /**
@@ -32,23 +37,29 @@ class CommentaireArticleController extends Controller
      *
      */
     public function newAction(Request $request)
-    {
-        $commentaireArticle = new Commentairearticle();
-        $form = $this->createForm('WorldCup\RussiaBundle\Form\CommentaireArticleType', $commentaireArticle);
-        $form->handleRequest($request);
+    {   $em = $this->getDoctrine()->getManager();
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        $commentaireArticle = new Commentairearticle();
+        $user = $em->getRepository('WorldCupRussiaBundle:User')->find('1');
+
+       // $form = $this->createForm('WorldCup\RussiaBundle\Form\CommentaireArticleType', $commentaireArticle);
+       // $form->handleRequest($request);
+
+        if ($request->isMethod('POST')){
+            $date = new \DateTime();
+            $idarticle = $request->get('idd');
+        $article = $em->getRepository('WorldCupRussiaBundle:Article')->find($idarticle);
+        $commentaireArticle->setArticle($article);
+        $commentaireArticle->setContenu($request->get('textarea-comment'));
+        $commentaireArticle->setUser($user);
+        $commentaireArticle->setDate($date);
             $em->persist($commentaireArticle);
             $em->flush();
 
-            return $this->redirectToRoute('commentairearticle_show', array('id' => $commentaireArticle->getId()));
+            return $this->render('commentairearticle/Commentaires.html.twig', array("commentaireArticles"=>$article->getCommmentaires()));
         }
 
-        return $this->render('commentairearticle/new.html.twig', array(
-            'commentaireArticle' => $commentaireArticle,
-            'form' => $form->createView(),
-        ));
+        return $this->render('WorldCupRussiaBundle:article/show.html.twig',array());
     }
 
     /**

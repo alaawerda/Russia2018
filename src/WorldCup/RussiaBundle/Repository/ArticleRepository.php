@@ -10,4 +10,19 @@ namespace WorldCup\RussiaBundle\Repository;
  */
 class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    function triArticleParDateDesc()
+    {
+        $query = $this->getEntityManager()->createQuery("select a from WorldCupRussiaBundle:Article a ORDER BY a.date DESC");
+
+        return $query->getResult();
+
+
+    }
+    function getMaxcommentedArticles()
+    {
+        $query = $this->getEntityManager()->createQuery("select a,count(a) HIDDEN f from WorldCupRussiaBundle:Article a INNER JOIN WorldCupRussiaBundle:CommentaireArticle c WITH a.id = c.article group by c.article ORDER BY f DESC ")->setMaxResults(3);
+        return ($query->getResult());
+
+    }
 }

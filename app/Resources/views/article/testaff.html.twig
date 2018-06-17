@@ -8,36 +8,32 @@
             <!-- Posts Grid -->
             <div class="posts posts--cards post-grid post-grid--2cols post-grid--fitRows row">
                 {% for article in articles %}
-                    <div class="post-grid__item col-xs-6">
+                    <div class="post-grid__item col-xs-6" >
+                        <a href="{{ path('article_show',{'id' :article.id}) }}"></a>
                         <div class="posts__item posts__item--card posts__item--category-1 card">
                             <figure class="posts__thumb">
                                 <div class="posts__cat">
-                                    <span class="label posts__cat-label">The Team</span>
+                                    <span class="label posts__cat-label">{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</span>
                                 </div>
-                                <a href="#"><img src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt=""></a>
+                                <a href="{{ path('article_show',{'id' :article.id}) }}"><img src="{{ asset('/PIDev/Russia2018/web/uploads/images/products/' ~ article.imageName) }}" alt="" style="height: 330px;width: 500px"></a>
                             </figure>
                             <div class="posts__inner card__content">
-                                <a href="#" class="posts__cta"></a>
-                                <time datetime="2016-08-23" class="posts__date">{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</time>
+                                <a href="{{ path('article_show',{'id' :article.id}) }}" class="posts__cta"></a>
+                               <!-- <time datetime="2016-08-23" class="posts__date"></time> -->
                                 <h6 class="posts__title"><a href="{{ path('article_show',{'id' :article.id}) }}">{{ article.titre }}</a></h6>
                                 <div class="posts__excerpt">
-                                    {{ article.description }}
+                                 {{ article.categorie }}
                                 </div>
                             </div>
                             <footer class="posts__footer card__footer">
                                 <div class="post-author">
                                     <figure class="post-author__avatar">
-                                        <img src="assets\images\samples\avatar-1.jpg" alt="Post Author Avatar">
+                                        <img src="{{ asset('/PIDev/Russia2018/web/soccer/assets\images\samples\avatar-1.jpg')}}" alt="Post Author Avatar">
                                     </figure>
                                     <div class="post-author__info">
-                                        <h4 class="post-author__name">Touil Montassar</h4>
+                                        <h4 class="post-author__name">{{ article.user.username }}</h4>
                                     </div>
                                 </div>
-                                <ul class="post__meta meta">
-                                    <li class="meta__item meta__item--views">2369</li>
-                                    <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
-                                    <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                                </ul>
                             </footer>
                         </div>
                     </div>
@@ -45,11 +41,22 @@
             </div>
         </div>
         <!-- Sidebar -->
-        <div id="sidebar" class="sidebar col-md-4">
+
+            <div id="sidebar" class="sidebar col-md-4">
+                <!-- Widget: Popular News -->
+                <aside class="widget widget--sidebar card widget-popular-posts">
+                    <div class="widget__title card__header">
+                        <h4>Articles Populaires </h4>
+                    </div>
+
+                        {{ render(controller('WorldCupRussiaBundle:Article:GetTopCommentedTopic')) }}
+                </aside>
+                <!-- Widget: Popular News / End -->
 
         </div>
     </div>
 
 {% endblock content %}
+
 
 
