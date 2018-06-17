@@ -13,8 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
 class Matche
 {
     /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Groupe", inversedBy="id" )
+     * @ORM\JoinColumn(nullable=true)
      */
     private $groupe;
 
@@ -75,19 +75,19 @@ class Matche
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Stade", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $stade;
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $equipeA;
 
     /**
      * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Equipe", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $equipeB;
     /**
@@ -230,11 +230,11 @@ class Matche
         $this->stade = $stade;
     }
 
-    /*public function __toString()
-    {
-        $format = "Address (id: %s, street: %s, city: %s, country: %s)";
-        return sprintf($format, $this->id, $this->street, $this->city, $this->country);
-    }*/
-
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->equipeA." vs ".$this->equipeB;
+        // to show the id of the Category in the select
+        // return $this->id;
+    }
 }
 

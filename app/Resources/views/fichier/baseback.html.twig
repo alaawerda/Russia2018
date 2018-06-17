@@ -8,10 +8,8 @@
     <meta name="description" content="Mouldifi - A fully responsive, HTML5 based admin theme">
     <meta name="keywords" content="Russia, 2018, admin theme">
     <title>Russia 2018  | Dashboard</title>
-    <link href="{{ asset('http://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js') }}">
-    <link href="{{ asset('//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css') }}">
     <!-- Site favicon -->
-    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('images/favicon.ico') }}" />
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
     <!-- /site favicon -->
 
     <!-- Entypo font stylesheet -->
@@ -29,27 +27,18 @@
     <!-- Bootstrap stylesheet min version -->
     <link href="{{ asset('back/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- /bootstrap stylesheet min version -->
-    <link href="{{ asset('http://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js') }}">
-    <link href="{{ asset('http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css') }}">
-    <link href="{{ asset('https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css') }}">
-    <link href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css') }}">
+
     <!-- Mouldifi core stylesheet -->
     <link href="{{ asset('back/css/mouldifi-core.css') }}" rel="stylesheet">
     <!-- /mouldifi core stylesheet -->
-    <link href="{{ asset('back/css/plugins/select2/select2.css') }}" rel="stylesheet">
 
     <link href="{{ asset('back/css/mouldifi-forms.css') }}" rel="stylesheet">
-    <link href="{{ asset('back/css/plugins/datatables/jquery.dataTables.css') }}" rel="stylesheet">
-    <link href="{{ asset('back/js/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css') }}" rel="stylesheet">
-    <link href="{{ asset('back/css/plugins/datepicker/bootstrap-datepicker.css') }}" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="{{ asset('back/js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('back/js/respond.min.js') }}"></script>
-
-
-
     <![endif]-->
 
     <!--[if lte IE 8]>
@@ -66,7 +55,7 @@
 
         <!-- Site header  -->
         <header class="site-header">
-            <div class="site-logo"><a href="index.html"><img src="{{ asset('back/images/logo.png') }}" alt="Russia 2018" title="Russia 2018"></a></div>
+            <div class="site-logo"><a href="index.html"><img src="images/logo.png" alt="Mouldifi" title="Mouldifi"></a></div>
             <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
             <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
         </header>
@@ -76,12 +65,9 @@
         <ul id="side-nav" class="main-menu navbar-collapse collapse">
             <li class="has-sub active "><a href="index.html"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
                 <ul class="nav">
-                    <li class="active"><a href="index.html"><span class="title">Liste des matchs</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs a venir</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs En cours</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs Terminés</span></a></li>
-
-
+                    <li class="active"><a href="index.html"><span class="title">Misc.</span></a></li>
+                    <li><a href="ecommerce-dashboard.html"><span class="title">E-Commerce</span></a></li>
+                    <li><a href="news-dashboard.html"><span class="title">News Portal</span></a></li>
                 </ul>
             </li>
             <li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Layouts</span></a>
@@ -346,11 +332,6 @@
         <div class="main-content">
             <h1 class="page-title">Dashboard</h1>
 
-                {% block content %}
-
-                {% endblock %}
-
-
         </div>
         <!-- /main content -->
 
@@ -360,37 +341,7 @@
 </div>
 <!-- /page container -->
 
-</body>
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
 <!--Load JQuery-->
-<script src="{{ asset('back/js/jquery.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/css3-animate-it-plugin/css3-animate-it.js') }}"></script>
-<script src="{{ asset('back/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/metismenu/jquery.metisMenu.js') }}"></script>
-<script src="{{ asset('back/js/plugins/blockui-master/jquery-ui.js') }}"></script>
-<script src="{{ asset('back/js/plugins/blockui-master/jquery.blockUI.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.resize.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.selection.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.pie.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/flot/jquery.flot.time.min.js') }}"></script>
-<script src="{{ asset('back/js/functions.js') }}"> </script>
-
-<script src="{{ asset('back/js/plugins/select2/select2.full.min.js') }}"></script>
-
-
-<script src="{{ asset('back/js/jquery.min.js') }}"></script>
-
-
-<!--ChartJs-->
-<script src="{{ asset('back/js/plugins/chartjs/Chart.min.js') }}"></script>
-
 <script src="{{ asset('back/js/jquery.min.js') }}"></script>
 <!-- Load CSS3 Animate It Plugin JS -->
 <script src="{{ asset('back/js/plugins/css3-animate-it-plugin/css3-animate-it.js') }}"></script>
@@ -398,22 +349,20 @@
 <script src="{{ asset('back/js/plugins/metismenu/jquery.metisMenu.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery-ui.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery.blockUI.js') }}"></script>
+<!--Float Charts-->
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.min.js') }}"></script>
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.resize.min.js') }}"></script>
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.selection.min.js') }}"></script>
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.pie.min.js') }}"></script>
+<script src="{{ asset('back/js/plugins/flot/jquery.flot.time.min.js') }}"></script>
 <script src="{{ asset('back/js/functions.js') }}"></script>
 
-<script src="{{ asset('back/js/plugins/datatables/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/jszip.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/pdfmake.min.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/vfs_fonts.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.html5.js') }}"></script>
-<script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js') }}"></script>
+<!--ChartJs-->
+<script src="{{ asset('back/js/plugins/chartjs/Chart.min.js') }}"></script>
 
 
-{% block js %}
-
-{% endblock %}
-
+</body>
 
 <!-- Mirrored from www.g-axon.com/mouldifi-5.0/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 May 2018 20:54:55 GMT -->
 </html>

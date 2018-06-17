@@ -1,7 +1,7 @@
-{% extends 'base.html.twig' %}
+{% extends 'backbase.html.twig' %}
 
 {% block content %}
-    <h1>Categorie edit</h1>
+    <h1>Detailsstatistique edit</h1>
 
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
@@ -10,7 +10,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('categorie_index') }}">Back to the list</a>
+            <a href="{{ path('detailsstatistique_index') }}">Back to the list</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
@@ -18,4 +18,4 @@
             {{ form_end(delete_form) }}
         </li>
     </ul>
-{% endblock content %}
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
-    <h1>Article creation</h1>
+{% block body %}
+    <h1>Fichier creation</h1>
 
     {{ form_start(form) }}
         {{ form_widget(form) }}
@@ -10,7 +10,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
+            <a href="{{ path('fichier_index') }}">Back to the list</a>
         </li>
     </ul>
-{% endblock content %}
+{% endblock %}
