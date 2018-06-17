@@ -1,3 +1,4 @@
+
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
@@ -15,16 +16,10 @@ fos_user:
         address: "alaa.werda@esprit.tn"
         sender_name: "alaa werda"
 
-vich_uploader:
-    db_driver: orm
-    mappings:
-            product_image:
-                uri_prefix:         '%app.path.product_images%'
-                upload_destination: '%kernel.root_dir%/../web%app.path.product_images%'
+
 
 parameters:
     locale: en
-    app.path.product_images: /uploads/images/products
 
 framework:
     #esi: ~
@@ -53,8 +48,6 @@ framework:
 
 # Twig Configuration
 twig:
-    form_themes:
-       - 'bootstrap_3_layout.html.twig'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
 

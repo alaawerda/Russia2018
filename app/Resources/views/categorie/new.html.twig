@@ -1,4 +1,4 @@
-{% extends 'backbase.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block content %}
     <h1>Categorie creation</h1>
@@ -8,9 +8,9 @@
         <input type="submit" value="Create" />
     {{ form_end(form) }}
 
-
-        <button>
+    <ul>
+        <li>
             <a href="{{ path('categorie_index') }}">Back to the list</a>
-        </button>
-
+        </li>
+    </ul>
 {% endblock content %}

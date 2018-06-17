@@ -1,4 +1,4 @@
-{% extends 'backbase.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block content %}
     <h1>Categorie edit</h1>
@@ -9,10 +9,10 @@
     {{ form_end(edit_form) }}
 
     <ul>
-        <button>
-            <a href="{{ path('categorie_indexback') }}">Back to the list</a>
-        </button>
-        <li hidden>
+        <li>
+            <a href="{{ path('categorie_index') }}">Back to the list</a>
+        </li>
+        <li>
             {{ form_start(delete_form) }}
                 <input type="submit" value="Delete">
             {{ form_end(delete_form) }}

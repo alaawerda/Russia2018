@@ -3,15 +3,12 @@
 namespace WorldCup\RussiaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
-use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * Stade
  *
  * @ORM\Table(name="stade")
- * @ORM\Entity
- * @Vich\Uploadable
+ * @ORM\Entity(repositoryClass="WorldCup\RussiaBundle\Repository\StadeRepository")
  */
 class Stade
 {
@@ -39,52 +36,40 @@ class Stade
     private $nom;
 
     /**
-     * @ORM\ManyToOne(targetEntity="WorldCup\RussiaBundle\Entity\Ville", inversedBy="id")
-     * @ORM\JoinColumn(nullable=false)
+     * @var string
+     *
+     * @ORM\Column(name="ville", type="string", length=255)
      */
     private $ville;
 
 
     /**
-     * @var string
+     * Get id
      *
-     * @ORM\Column(name="image", type="string", length=255)
+     * @return integer
      */
-    private $image;
-
-
-    /**
-     * @var float
-     *
-     * @ORM\Column(name="longitude", type="float")
-     */
-
-    private $longitude;
-
-    /**
-     * @var float
-     *
-     * @ORM\Column(name="latitude", type="float")
-     */
-    private $latitude;
-
-     /**
-      * @return int
-      */
     public function getId()
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * Set capacite
+     *
+     * @param float $capacite
+     *
+     * @return Stade
      */
-    public function setId($id)
+    public function setCapacite($capacite)
     {
-        $this->id = $id;
+        $this->capacite = $capacite;
+    
+        return $this;
     }
 
     /**
+     * Get capacite
+     *
      * @return float
      */
     public function getCapacite()
@@ -93,14 +78,22 @@ class Stade
     }
 
     /**
-     * @param float $capacite
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Stade
      */
-    public function setCapacite($capacite)
+    public function setNom($nom)
     {
-        $this->capacite = $capacite;
+        $this->nom = $nom;
+    
+        return $this;
     }
 
     /**
+     * Get nom
+     *
      * @return string
      */
     public function getNom()
@@ -109,141 +102,34 @@ class Stade
     }
 
     /**
-     * @param string $nom
+     * Set ville
+     *
+     * @param string $ville
+     *
+     * @return Stade
      */
-    public function setNom($nom)
+    public function setVille($ville)
     {
-        $this->nom = $nom;
+        $this->ville = $ville;
+    
+        return $this;
     }
 
     /**
-     * @return mixed
+     * Get ville
+     *
+     * @return string
      */
     public function getVille()
     {
         return $this->ville;
     }
 
-    /**
-     * @param mixed $ville
-     */
-    public function setVille($ville)
-    {
-        $this->ville = $ville;
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->nom;
+        // to show the id of the Category in the select
+        // return $this->id;
     }
-
-
-   /**
-     g* @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
-
-    /**
-     * @return float
-     */
-    public function getLongitude()
-    {
-        return $this->longitude;
-    }
-
-    /**
-     * @param float $longitude
-     */
-    public function setLongitude($longitude)
-    {
-        $this->longitude = $longitude;
-    }
-
-    /**
-     * @return float
-     */
-    public function getLatitude()
-    {
-        return $this->latitude;
-    }
-
-    /**
-     * @param float $latitude
-     */
-    public function setLatitude($latitude)
-    {
-        $this->latitude = $latitude;
-    }
-
-    /**
-     * NOTE: This is not a mapped field of entity metadata, just a simple property.
-     *
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="imageName")
-     *
-     * @var File
-     */
-    private $imageFile;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="image_name", type="string", length=255, nullable=true)
-     */
-    private $imageName;
-
-    public function setImageFile(File $image = null)
-    {
-        $this->imageFile = $image;
-        if ($image) {
-            $this->updatedAt = new \DateTime('now');
-        }
-        return $this;
-    }
-
-    /**
-     * @return File|null
-     */
-    public function getImageFile()
-    {
-        return $this->imageFile;
-    }
-
-    /**
-     * Set imageName
-     *
-     * @param string $imageName
-     *
-     * @return Product
-     */
-    public function setImageName($imageName)
-    {
-        $this->imageName = $imageName;
-
-        return $this;
-    }
-
-    /**
-     * Get imageName
-     *
-     * @return string
-     */
-    public function getImageName()
-    {
-        return $this->imageName;
-    }
-
-    /**
-     * @ORM\Column(type="datetime")
-     *
-     * @var \DateTime
-     */
-    private $updatedAt;
-
 }
 

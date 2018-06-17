@@ -1,4 +1,5 @@
-{% extends 'backbase.html.twig' %}
+{% extends 'base.html.twig' %}
+
 {% block content %}
     <h1>Article creation</h1>
 
@@ -7,9 +8,9 @@
         <input type="submit" value="Create" />
     {{ form_end(form) }}
 
-
-        <button>
-            <a href="{{ path('article_indexback') }}">Back to the list</a>
-        </button>
-
+    <ul>
+        <li>
+            <a href="{{ path('article_index') }}">Back to the list</a>
+        </li>
+    </ul>
 {% endblock content %}
