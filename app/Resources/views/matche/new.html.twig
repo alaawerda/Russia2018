@@ -1,58 +1,88 @@
 {% extends 'backbase.html.twig' %}
 
+
 {% block content %}
-    <h1>Matche creation</h1>
+    <h1>Ajout Match</h1>
 
-    {{ form_start(form) }}
-    {{ form_label(form.etat  ) }}
-    {{ form_errors(form.etat, { 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.etat , { 'attr': {'class': 'select2 form-control'} } ) }}
+    <div class="row">
+        <div class="col-lg-12 animatedParent animateOnce z-index-50">
+            <div class="panel panel-default animated fadeInUp">
+                <div class="panel-heading clearfix">
+                    <ul class="panel-tool-options">
+                        <li><a data-rel="collapse" href="#"><i class="icon-down-open"></i></a></li>
+                        <li><a data-rel="reload" href="#"><i class="icon-arrows-ccw"></i></a></li>
+                        <li><a data-rel="close" href="#"><i class="icon-cancel"></i></a></li>
+                    </ul>
+                </div>
+                <h1>Matche creation</h1>
 
-    {{ form_label(form.phase  ) }}
-    {{ form_errors(form.phase, { 'id': 'phase', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.phase , { 'id': 'phase', 'attr': {'class': 'select2 form-control ','required': ' required '} } ) }}
 
-    <div id="tt" style="display: block ; width: 1170px !important; ">
-        <span style="width: 1170px" >{{ form_label(form.groupe ) }}</span>
-        {{ form_errors(form.groupe, { 'id': 'groupe', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-        {{ form_widget(form.groupe , { 'id': 'groupe', 'attr': {'class': 'select2 form-control '} } ) }}
+                <div class="panel-body">
+                    <form class="form-horizontal">
+
+
+                        {{ form_start(form) }}
+
+
+
+
+
+
+                        <div class="form-group">
+
+                            {{ form_label(form.etat  ) }}
+
+                            {{ form_errors(form.etat, { 'attr': {'class': 'col-sm-2 control-label'} } ) }}
+                            {{ form_widget(form.etat , { 'attr': {'class': 'form-control'} } ) }}
+
+
+                        </div>
+                        {{ form_widget(form) }}
+                        <input type="submit" value="Create" />
+                        {{ form_end(form) }}
+
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+                <ul>
+                    <li>
+                        <a href="{{ path('matche_index') }}">Back to the list</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
     </div>
-    {{ form_label(form.equipeA  ) }}
-    {{ form_errors(form.equipeA, { 'id': 'equipeA', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.equipeA , { 'id': 'equipeA', 'attr': {'class': ' form-control ','required': ' required '} } ) }}
-    {{ form_label(form.equipeB  ) }}
-    {{ form_errors(form.equipeB, { 'id': 'equipeB', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.equipeB , { 'id': 'equipeB', 'attr': {'class': ' form-control ','required': ' required '} } ) }}
-
-    {{ form_label(form.stade  ) }}
-    {{ form_errors(form.stade, { 'id': 'stade', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.stade , { 'id': 'stade', 'attr': {'class': ' form-control ','required': ' required '} } ) }}
 
 
-    {{ form_label(form.date  ) }}
-    {{ form_errors(form.date, { 'id': 'date', 'attr': {'class': 'input-group date'} } ) }}
-    {{ form_widget(form.date , { 'id': 'date', 'attr': {'class': ' input-group date ','required': ' required '} } ) }}
-
-    {{ form_label(form.staffe_arbitre  ) }}
-    {{ form_errors(form.staffe_arbitre, { 'id': 'staffe_arbitre', 'attr': {'class': 'col-sm-2 control-label'} } ) }}
-    {{ form_widget(form.staffe_arbitre , { 'id': 'staffe_arbitre', 'attr': {'class': ' form-control ','required': ' required '} } ) }}
-
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('matche_index') }}">Back to the list</a>
-        </li>
-    </ul>
-{% endblock %}
+{% endblock content %}
 {% block js %}
-    <script src="{{ asset('back/js/plugins/select2/select2.full.min.js') }}"></script>
+    <!--Load JQuery-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Load CSS3 Animate It Plugin JS -->
+    <script src="js/plugins/css3-animate-it-plugin/css3-animate-it.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metismenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/blockui-master/jquery-ui.js"></script>
+    <script src="js/plugins/blockui-master/jquery.blockUI.js"></script>
+    <script src="js/functions.js"></script>
+
+    <script src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+    <script src="js/plugins/datatables/jszip.min.js"></script>
+    <script src="js/plugins/datatables/pdfmake.min.js"></script>
+    <script src="js/plugins/datatables/vfs_fonts.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/buttons.html5.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js"></script>
     <script>
         $(document).ready(function () {
-            $("#equipeA").empty();
-            $(".select2").select2();
             $('.dataTables-example').DataTable({
                 dom: '<"html5buttons" B>lTfgitp',
                 buttons: [
@@ -77,85 +107,7 @@
                     'colvis'
                 ]
             });
-
-            $("#groupe").change(function()
-            {
-                $("#equipeA").empty();
-                $("#equipeB").empty();
-                var groupe = $(this).val();
-                var  ala =  $("#phase").val();
-                //var  ala =  $("#equipeA").val();
-                console.log(ala);
-                /*if (groupe =="Poule")
-                 $("#tt").css('display', 'block');
-                 else
-                 $("#tt").css('display', 'none');*/
-                $.ajax({
-
-                    url      : "{{ path('match_list') }}",
-                    data     : {id: groupe ,phase: ala},
-                    type     : 'GET',
-                    dataType : 'JSON',
-                    error    : function(request, error) {
-                        alert("Erreur fhghfhfg: "+error);
-                    },
-                    success  : function(data) {
-                        console.log(JSON.stringify(data));
-                        $.each(data,function(i,item) {
-                            var d="<option value="+item.id+">"+item.nom+"</option>";
-                            $('#equipeA').append(d);
-
-                        })
-
-                    }
-                });
-            });
-
-            $("#equipeA").change(function()
-            {
-
-                $("#equipeB").empty();
-                var  groupe =  $("#groupe").val();
-                var  equipea =  $("#equipeA").val();
-                var phasee = $("#phase").val();
-                $.ajax({
-                    url      : "{{ path('match_listt') }}",
-                    data     : {id: groupe ,equipeA: equipea,phase:phasee},
-                    type     : 'GET',
-                    dataType : 'JSON',
-                    error    : function(request, error) {
-                        alert("Erreur fhghfhfg: "+error);
-                    },
-                    success  : function(data) {
-                        // alert("sdfsdf");
-                        console.log(JSON.stringify(data));
-                        $.each(data,function(i,item) {
-                            var d="<option value="+item.id+">"+item.nom+"</option>";
-                            $('#equipeB').append(d);
-                        })
-                    }
-                });
-            });
-
-
-            $("#phase").change(function()
-            {
-                if ($(this).val()!='Poule'){
-                    //alert($(this).val());
-                    $("#equipeA").empty();
-                    $("#groupe").prop('disabled', true);
-
-                    $("#equipeB").empty();
-                }
-                else{
-                    $("#groupe").prop('disabled', false);
-
-                }
-
-            });
-
         });
-
     </script>
 
 {% endblock %}

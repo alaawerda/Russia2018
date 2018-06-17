@@ -1,0 +1,40 @@
+{% extends 'backbase.html.twig' %}
+
+{% block content %}
+    <h1>{{ article.titre }}</h1>
+
+    <table>
+        <tbody>
+            <tr hidden>
+                <th>Id</th>
+                <td>{{ article.id }}</td>
+            </tr>
+            <tr>
+                <th>Description                    </th>
+                <td>           {{ article.description }}</td>
+            </tr>
+            <tr>
+                <th>Titre                       </th>
+                <td>           {{ article.titre }}</td>
+            </tr>
+            <tr>
+                <th>Date                       </th>
+                <td>         {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <button>
+            <a href="{{ path('article_indexback') }}">Back to the list</a>
+        </button>
+        <button >
+            <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
+        </button>
+        <li hidden>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock content %}

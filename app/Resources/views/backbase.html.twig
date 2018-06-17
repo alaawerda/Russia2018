@@ -36,20 +36,15 @@
     <!-- Mouldifi core stylesheet -->
     <link href="{{ asset('back/css/mouldifi-core.css') }}" rel="stylesheet">
     <!-- /mouldifi core stylesheet -->
-    <link href="{{ asset('back/css/plugins/select2/select2.css') }}" rel="stylesheet">
 
     <link href="{{ asset('back/css/mouldifi-forms.css') }}" rel="stylesheet">
     <link href="{{ asset('back/css/plugins/datatables/jquery.dataTables.css') }}" rel="stylesheet">
     <link href="{{ asset('back/js/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css') }}" rel="stylesheet">
-    <link href="{{ asset('back/css/plugins/datepicker/bootstrap-datepicker.css') }}" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="{{ asset('back/js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('back/js/respond.min.js') }}"></script>
-
-
-
     <![endif]-->
 
     <!--[if lte IE 8]>
@@ -66,7 +61,7 @@
 
         <!-- Site header  -->
         <header class="site-header">
-            <div class="site-logo"><a href="index.html"><img src="{{ asset('back/images/logo.png') }}" alt="Russia 2018" title="Russia 2018"></a></div>
+            <div class="site-logo"><a href="#"><img src="{{ asset('back/images/russia.png') }}" alt="Russia 2018" title="Russia 2018"></a></div>
             <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
             <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
         </header>
@@ -74,135 +69,118 @@
 
         <!-- Main navigation -->
         <ul id="side-nav" class="main-menu navbar-collapse collapse">
-            <li class="has-sub active "><a href="index.html"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
+            <li class="has-sub active "><a href="#"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
                 <ul class="nav">
-                    <li class="active"><a href="index.html"><span class="title">Liste des matchs</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs a venir</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs En cours</span></a></li>
-                    <li><a href="ecommerce-dashboard.html"><span class="title">Liste des matchs Terminés</span></a></li>
+                    <li class="active"><a href="#"><span class="title">Liste des matchs</span></a></li>
+
 
 
                 </ul>
             </li>
-            <li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Layouts</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-layout"></i><span class="title">Articles</span></a>
+
                 <ul class="nav collapse">
-                    <li><a href="collapsed-sidebar.html"><span class="title">Collapsed Sidebar</span></a></li>
-                    <li><a href="fixed-sidebar.html"><span class="title">Fixed Sidebar</span></a></li>
+                    <li><a href="{{ path('article_indexback') }}"><span class="title">Afficher les Articles</span></a></li>
+
+                </ul>
+
+                <ul class="nav collapse">
+
+                    <li><a href="{{ path('article_new') }}"><span class="title">Ajouter Article</span></a></li>
+
+                </ul>
+
+
+            </li>
+            <li class="has-sub"><a href="#"><i class="icon-newspaper"></i><span class="title">Categories Article</span></a>
+                <ul class="nav collapse">
+                    <li><a href="{{ path('categorie_indexback') }}"><span class="title">Afficher les Categories Articles</span></a></li>
+
+                </ul>
+
+                <ul class="nav collapse">
+
+                    <li><a href="{{ path('categorie_new') }}"><span class="title">Ajouter Categorie Article</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="panels.html"><i class="icon-newspaper"></i><span class="title">UI Elements</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-window"></i><span class="title">Tables</span></a>
                 <ul class="nav collapse">
-                    <li><a href="panels.html"><span class="title">Panels</span></a></li>
-                    <li><a href="buttons.html"><span class="title">Buttons</span></a></li>
-                    <li><a href="typography.html"><span class="title">Typography</span></a></li>
-                    <li><a href="tabs-accordions.html"><span class="title">Tabs &amp; Accordions</span></a></li>
-                    <li><a href="tooltips-popovers.html"><span class="title">Tooltips &amp; Popovers</span></a></li>
-                    <li><a href="navbars.html"><span class="title">Navbars</span></a></li>
-                    <li><a href="breadcrumbs.html"><span class="title">Breadcrumbs</span></a></li>
-                    <li><a href="badges-label.html"><span class="title">Badges &amp; Labels</span></a></li>
-                    <li><a href="progress-bars.html"><span class="title">Progress Bars</span></a></li>
-                    <li><a href="modals.html"><span class="title">Modals</span></a></li>
-                    <li><a href="alerts.html"><span class="title">Alerts</span></a></li>
-                    <li><a href="pagination.html"><span class="title">Pagination</span></a></li>
-                    <li><a href="video.html"><span class="title">Video</span></a></li>
+                    <li><a href="#"><span class="title">Basic Tables</span></a></li>
+                    <
                 </ul>
             </li>
-            <li class="has-sub"><a href="basic-tables.html"><i class="icon-window"></i><span class="title">Tables</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-doc-text"></i><span class="title">Forms</span></a>
                 <ul class="nav collapse">
-                    <li><a href="basic-tables.html"><span class="title">Basic Tables</span></a></li>
-                    <li><a href="data-tables.html"><span class="title">Data Tables</span></a></li>
+                    <li><a href="#"><span class="title">Basic Form</span></a></li>
+                    <
                 </ul>
             </li>
-            <li class="has-sub"><a href="form-basic.html"><i class="icon-doc-text"></i><span class="title">Forms</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-chart-bar"></i><span class="title">Graphs</span></a>
                 <ul class="nav collapse">
-                    <li><a href="form-basic.html"><span class="title">Basic Form</span></a></li>
-                    <li><a href="form-advanced.html"><span class="title">Advanced Plugins</span></a></li>
-                    <li><a href="form-wizard.html"><span class="title">Form Wizard</span></a></li>
-                    <li><a href="file-upload.html"><span class="title">File upload</span></a></li>
-                    <li><a href="editors.html"><span class="title">Editors</span></a></li>
+                    <li><a href="#"><span class="title">Flot Charts</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="graph-flot.html"><i class="icon-chart-bar"></i><span class="title">Graphs</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-mail"></i><span class="title">Mailbox</span></a>
                 <ul class="nav collapse">
-                    <li><a href="graph-flot.html"><span class="title">Flot Charts</span></a></li>
-                    <li><a href="graph-morris.html"><span class="title">Morris Charts</span></a></li>
-                    <li><a href="graph-peity.html"><span class="title">Peity Charts</span></a></li>
-                    <li><a href="graph-sparkline.html"><span class="title">Sparkline Charts</span></a></li>
-                    <li><a href="graph-chartjs.html"><span class="title">ChartsJs</span></a></li>
-                    <li><a href="graph-chartist.html"><span class="title">Chartist</span></a></li>
-                    <li><a href="graph-c3.html"><span class="title">C3 Charts</span></a></li>
+                    <li><a href="#"><span class="title">Inbox</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="mail-inbox.html"><i class="icon-mail"></i><span class="title">Mailbox</span></a>
+            <li><a href="#"><i class="icon-location"></i><span class="title">Vector Map</span> <span class="label label-secondary pull-right">NEW</span></a></li>
+            <li class="has-sub"><a href="#"><i class="icon-google-circles"></i><span class="title">Various Screens</span></a>
                 <ul class="nav collapse">
-                    <li><a href="mail-inbox.html"><span class="title">Inbox</span></a></li>
-                    <li><a href="mail-compose.html"><span class="title">Compose Mail</span></a></li>
-                    <li><a href="mail-read.html"><span class="title">View Mail</span></a></li>
+                    <li><a href="#"><span class="title">Login</span></a></li>
+
                 </ul>
             </li>
-            <li><a href="maps-vector.html"><i class="icon-location"></i><span class="title">Vector Map</span> <span class="label label-secondary pull-right">NEW</span></a></li>
-            <li class="has-sub"><a href="login.html"><i class="icon-google-circles"></i><span class="title">Various Screens</span></a>
-                <ul class="nav collapse">
-                    <li><a href="login.html"><span class="title">Login</span></a></li>
-                    <li><a href="register.html"><span class="title">Register</span></a></li>
-                    <li><a href="forgot-password.html"><span class="title">Forgot password</span></a></li>
-                    <li><a href="lockscreen.html"><span class="title">Lockscreen</span></a></li>
-                    <li><a href="error-404.html"><span class="title">404 Page</span></a></li>
-                    <li><a href="blank-page.html"><span class="title">Blank Page</span></a></li>
-                    <li><a href="comments.html"><span class="title">Comments</span></a></li>
-                </ul>
-            </li>
-            <li class="has-sub"><a href="blog.html"><i class="icon-docs"></i><span class="title">Extra Pages</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-docs"></i><span class="title">Extra Pages</span></a>
                 <ul class="nav">
-                    <li><a href="blog.html"><span class="title">Blog</span></a></li>
-                    <li><a href="blog-detail.html"><span class="title">Blog Detail</span></a></li>
-                    <li><a href="timeline.html"><span class="title">Timeline</span></a></li>
+                    <li><a href="#"><span class="title">Blog</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="icons-entypo.html"><i class="icon-thumbs-up"></i><span class="title">Icons</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-thumbs-up"></i><span class="title">Icons</span></a>
                 <ul class="nav collapse">
-                    <li><a href="icons-entypo.html"><span class="title">Entypo</span></a></li>
-                    <li><a href="icons-fontawesome.html"><span class="title">Font Awesome</span></a></li>
-                    <li><a href="icons-glyphicons.html"><span class="title">Glyph Icons</span></a></li>
+                    <li><a href="#"><span class="title">Entypo</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="simple-view.html"><i class="icon-list"></i><span class="title">List Views</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-list"></i><span class="title">List Views</span></a>
                 <ul class="nav collapse">
-                    <li><a href="simple-view.html"><span class="title">Simple View</span></a></li>
-                    <li><a href="cards-view.html"><span class="title">Cards View</span></a></li>
-                    <li><a href="strip-view.html"><span class="title">Strip View</span></a></li>
-                    <li><a href="table-view.html"><span class="title">Table View</span></a></li>
+                    <li><a href="#"><span class="title">Simple View</span></a></li>
+
                 </ul>
             </li>
-            <li class="has-sub"><a href="short-view.html"><i class="icon-popup"></i><span class="title">Grid Views</span></a>
+            <li class="has-sub"><a href="#"><i class="icon-popup"></i><span class="title">Grid Views</span></a>
                 <ul class="nav collapse">
-                    <li><a href="short-view.html"><span class="title">Short View</span></a></li>
-                    <li><a href="detailed-view.html"><span class="title">Detailed View</span></a></li>
-                    <li><a href="detailed-view-2.html"><span class="title">Detailed Action View</span></a></li>
+                    <li><a href="#"><span class="title">Short View</span></a></li>
+
                 </ul>
             </li>
             <li class="has-sub">
-                <a href="#/"><i class="icon-flow-tree"></i><span class="title">Menu Levels</span></a>
+                <a href="#"><i class="icon-flow-tree"></i><span class="title">Menu Levels</span></a>
                 <ul class="nav collapse">
-                    <li><a href="#/"><span class="title">Menu Level 1.1</span></a></li>
-                    <li><a href="#/"><span class="title">Menu Level 1.2</span></a></li>
+                    <li><a href="#"><span class="title">Menu Level 1.1</span></a></li>
+                    <li><a href="#"><span class="title">Menu Level 1.2</span></a></li>
                     <li class="has-sub">
-                        <a href="#/"><span class="title">Menu Level 1.3</span></a>
+                        <a href="#"><span class="title">Menu Level 1.3</span></a>
                         <ul class="nav collapse">
-                            <li><a href="#/"><span class="title">Menu Level 2.1</span></a></li>
+                            <li><a href="#"><span class="title">Menu Level 2.1</span></a></li>
                             <li class="has-sub">
-                                <a href="#/"><span class="title">Menu Level 2.2</span></a>
+                                <a href="#"><span class="title">Menu Level 2.2</span></a>
                                 <ul class="nav collapse">
                                     <li class="has-sub">
-                                        <a href="#/"><span class="title">Menu Level 3.1</span></a>
+                                        <a href="#"><span class="title">Menu Level 3.1</span></a>
                                         <ul class="nav collapse">
-                                            <li><a href="#/"><span class="title">Menu Level 4.1</span></a></li>
+                                            <li><a href="#"><span class="title">Menu Level 4.1</span></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#/"><span class="title">Menu Level 3.2</span></a></li>
+                                    <li><a href="#"><span class="title">Menu Level 3.2</span></a></li>
                                 </ul>
                             </li>
-                            <li><a href="#/"><span class="title">Menu Level 2.3</span></a></li>
+                            <li><a href="#"><span class="title">Menu Level 2.3</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -221,13 +199,13 @@
 
                 <!-- User info -->
                 <ul class="user-info pull-left">
-                    <li class="profile-info dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg">John Henderson <span class="caret"></span></a>
+                    <li class="profile-info dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="{{ asset('images/man-3.jpg') }}">John Henderson <span class="caret"></span></a>
 
                         <!-- User action menu -->
                         <ul class="dropdown-menu">
 
-                            <li><a href="#/"><i class="icon-user"></i>My profile</a></li>
-                            <li><a href="#/"><i class="icon-mail"></i>Messages</a></li>
+                            <li><a href="#"><i class="icon-user"></i>My profile</a></li>
+                            <li><a href="#"><i class="icon-mail"></i>Messages</a></li>
                             <li><a href="#"><i class="icon-clipboard"></i>Tasks</a></li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="icon-cog"></i>Account settings</a></li>
@@ -278,7 +256,7 @@
                                 <li>
                                     <ul class="media-list">
                                         <li class="media">
-                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
+                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="{{ asset('') }}images/domnic-brown.png"></div>
                                             <div class="media-body">
                                                 <a class="media-heading" href="#">
                                                     <span class="text-semibold">Domnic Brown</span>
@@ -288,7 +266,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="images/john-smith.png"></div>
+                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="{{ asset('images/john-smith.png') }}"></div>
                                             <div class="media-body">
                                                 <a class="media-heading" href="#">
                                                     <span class="text-semibold">John Smith</span>
@@ -298,7 +276,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="images/stella-johnson.png"></div>
+                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="{{ asset('images/stella-johnson.png') }}"></div>
                                             <div class="media-body">
                                                 <a class="media-heading" href="#">
                                                     <span class="text-semibold">Stella Johnson</span>
@@ -308,7 +286,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="images/alex-dolgove.png"></div>
+                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="{{ asset('images/alex-dolgove.png') }}"></div>
                                             <div class="media-body">
                                                 <a class="media-heading" href="#">
                                                     <span class="text-semibold">Alex Dolgove</span>
@@ -318,7 +296,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
+                                            <div class="media-left"><img alt="" class="img-circle img-sm" src="{{ asset('images/domnic-brown.png') }}"></div>
                                             <div class="media-body">
                                                 <a class="media-heading" href="#">
                                                     <span class="text-semibold">Domnic Brown</span>
@@ -369,11 +347,13 @@
       <script src="js/respond.min.js"></script>
 <!--Load JQuery-->
 <script src="{{ asset('back/js/jquery.min.js') }}"></script>
+<!-- Load CSS3 Animate It Plugin JS -->
 <script src="{{ asset('back/js/plugins/css3-animate-it-plugin/css3-animate-it.js') }}"></script>
 <script src="{{ asset('back/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/metismenu/jquery.metisMenu.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery-ui.js') }}"></script>
 <script src="{{ asset('back/js/plugins/blockui-master/jquery.blockUI.js') }}"></script>
+<!--Float Charts-->
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.resize.min.js') }}"></script>
@@ -382,7 +362,6 @@
 <script src="{{ asset('back/js/plugins/flot/jquery.flot.time.min.js') }}"></script>
 <script src="{{ asset('back/js/functions.js') }}"> </script>
 
-<script src="{{ asset('back/js/plugins/select2/select2.full.min.js') }}"></script>
 
 
 <script src="{{ asset('back/js/jquery.min.js') }}"></script>
@@ -408,12 +387,9 @@
 <script src="{{ asset('back/js/plugins/datatables/vfs_fonts.js') }}"></script>
 <script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.html5.js') }}"></script>
 <script src="{{ asset('back/js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js') }}"></script>
-
-
 {% block js %}
 
 {% endblock %}
 
 
-<!-- Mirrored from www.g-axon.com/mouldifi-5.0/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 May 2018 20:54:55 GMT -->
 </html>

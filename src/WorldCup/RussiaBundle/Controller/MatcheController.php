@@ -2,15 +2,9 @@
 
 namespace WorldCup\RussiaBundle\Controller;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\HttpFoundation\Response;
 use WorldCup\RussiaBundle\Entity\Matche;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Serializer;
-
 
 /**
  * Matche controller.
@@ -46,7 +40,6 @@ class MatcheController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($matche);
-            dump($matche);
             $em->flush();
 
             return $this->redirectToRoute('matche_show', array('id' => $matche->getId()));
@@ -113,26 +106,6 @@ class MatcheController extends Controller
         return $this->redirectToRoute('matche_index');
     }
 
-
-    public function hatachayAction(Request $req)
-    {
-        if ($req->isXmlHttpRequest()){
-            $idgroupe = $req->get('fkidgroupe');
-            //$em = $this->getDoctrine()->getManager();
-            $conn = $this->get('database_connection');
-            $query = "select * from equipe WHERE groupe =".$idgroupe;
-            //$matches = $em->getRepository('WorldCupRussiaBundle:Groupe')->findAll();
-            $rows = $conn->fetchAll($query);
-            return new JsonResponse (array('data'=> json_encode($rows)));
-
-            $repository = $this->getDoctrine()->getRepository('WorldCupRussiaBundle:Matche');
-            $products = $repository->findBy($idgroupe);
-
-        };
-        return new  Response("dzezaez",400);
-    }
-
-
     /**
      * Creates a form to delete a matche entity.
      *
@@ -148,57 +121,4 @@ class MatcheController extends Controller
             ->getForm()
         ;
     }
-
-
-
-    public function listAction(Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $matches = $em->getRepository('WorldCupRussiaBundle:Equipe')->findAll();
-        if ($request->isXmlHttpRequest()){
-            $id = $request->get('id');
-            $phase = $request->get('phase');
-           /* $id = '1';
-            $phase = 'poule';*/
-            //dump($id);
-            $serliazer = new Serializer(array(new ObjectNormalizer()));
-            $matches = $em->getRepository('WorldCupRussiaBundle:Equipe')->Selects(
-                $id,$phase
-            );
-            $data = $serliazer->normalize($matches);
-            return new JsonResponse($data);
-        }
-        return $this->render('matche/test.html.twig', array(
-            'matches' => $matches,
-        ));
-    }
-
-    public function listtAction(Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $matches = $em->getRepository('WorldCupRussiaBundle:Equipe')->findAll();
-        if ($request->isXmlHttpRequest()){
-            $id = $request->get('id');
-            $equipeA = $request->get('equipeA');
-            $phase = $request->get('phase');
-            /* $id = '1';
-             $phase = 'poule';*/
-            //dump($id);
-            $serliazer = new Serializer(array(new ObjectNormalizer()));
-            $matches = $em->getRepository('WorldCupRussiaBundle:Equipe')->Selects3(
-                $id,$equipeA,$phase
-            );
-            $data = $serliazer->normalize($matches);
-            return new JsonResponse($data);
-        }
-        return $this->render('matche/test.html.twig', array(
-            'matches' => $matches,
-        ));
-    }
-
-
-
-
 }

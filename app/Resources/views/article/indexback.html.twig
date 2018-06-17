@@ -1,14 +1,14 @@
 {% extends 'backbase.html.twig' %}
 
-    {% block stylesheet %}
-        <!-- Favicons
-        ================================================== -->
+{% block stylesheet %}
+    <!-- Favicons
+    ================================================== -->
 
 
 
-    {% endblock %}
+{% endblock %}
 {% block content %}
-    <h1>Matches list</h1>
+    <h1>Articles list</h1>
 
     <div class="row">
         <div class="col-lg-12 animatedParent animateOnce z-index-50">
@@ -26,39 +26,29 @@
                             <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Equipes</th>
-                                <th>Groupe</th>
+                                <th>Description</th>
+                                <th>Titre</th>
                                 <th>Date</th>
-                                <th>Etat</th>
-                                <th>Phase</th>
-
+                                <th>Fichier</th>
+                                <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {% for matche in matches %}
+                            {% for article in articles %}
                                 <tr>
-                                    <td><a href="{{ path('matche_show', { 'id': matche.id }) }}">{{ matche.id }}</a></td>
-                                    <td>{{ matche.equipeA }}  <big>VS</big>  {{ matche.equipeB }}  </td>
-                                    <td>{{ matche.groupe }}  </td>
-
-                                    <td>{% if matche.date %}{{ matche.date|date('Y-m-d H:i') }}{% endif %}</td>
-                                    <td>{{ matche.etat }}</td>
-
-                                    <td>{{ matche.phase }}</td>
+                                    <td><a href="{{ path('article_show', { 'id': article.id }) }}">{{ article.id }}</a></td>
+                                    <td>{{ article.description }}</td>
+                                    <td>{{ article.titre }}</td>
+                                    <td>{% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %}</td>
+                                    <td>{{ article.imageName }}</td>
                                     <td>
                                         <ul>
-
-                                            <li>
-                                                <a href="{{ path('detailsstatistique_new', { 'idmatch': matche.id }) }}">Ajouter Statistiques</a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                <a href="">show</a>
-                                            </li>
-
+                                            <button>
+                                                <a href="{{ path('article_showback', { 'id': article.id }) }}">show</a>
+                                            </button>
+                                            <button>
+                                                <a href="{{ path('article_edit', { 'id': article.id }) }}">edit</a>
+                                            </button>
                                         </ul>
                                     </td>
                                 </tr>
@@ -75,8 +65,29 @@
 
 
 {% endblock content %}
-{% block js %}
 
+
+
+
+{% block js %}
+    <!--Load JQuery-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Load CSS3 Animate It Plugin JS -->
+    <script src="js/plugins/css3-animate-it-plugin/css3-animate-it.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metismenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/blockui-master/jquery-ui.js"></script>
+    <script src="js/plugins/blockui-master/jquery.blockUI.js"></script>
+    <script src="js/functions.js"></script>
+
+    <script src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+    <script src="js/plugins/datatables/jszip.min.js"></script>
+    <script src="js/plugins/datatables/pdfmake.min.js"></script>
+    <script src="js/plugins/datatables/vfs_fonts.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/buttons.html5.js"></script>
+    <script src="js/plugins/datatables/extensions/Buttons/js/buttons.colVis.js"></script>
     <script>
         $(document).ready(function () {
             $('.dataTables-example').DataTable({

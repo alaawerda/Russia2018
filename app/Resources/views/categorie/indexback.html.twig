@@ -1,14 +1,17 @@
 {% extends 'backbase.html.twig' %}
 
-    {% block stylesheet %}
-        <!-- Favicons
-        ================================================== -->
 
 
 
-    {% endblock %}
+{% block stylesheet %}
+    <!-- Favicons
+    ================================================== -->
+
+
+
+{% endblock %}
 {% block content %}
-    <h1>Matches list</h1>
+    <h1>Categories list</h1>
 
     <div class="row">
         <div class="col-lg-12 animatedParent animateOnce z-index-50">
@@ -26,41 +29,31 @@
                             <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Equipes</th>
-                                <th>Groupe</th>
-                                <th>Etat</th>
-                                <th>Phase</th>
-
+                                <th>Titre</th>
+                                <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {% for matche in matches %}
+                            {% for categorie in categories %}
                                 <tr>
-
-                                    <td>{{ matche.nom }}</td>
-                                    <td>{{ matche.id }}</td>
-
-                                    <td>{{ matche.point }}</td>
-                                    <td>{{ matche.logo }}</td>
-                                    <td>{{ matche.groupe }}</td>
-
-
-
+                                    <td><a href="{{ path('categorie_show', { 'id': categorie.id }) }}">{{ categorie.id }}</a></td>
+                                    <td>{{ categorie.titre }}</td>
+                                    <td>
+                                        <ul>
+                                            <button>
+                                                <a href="{{ path('categorie_show', { 'id': categorie.id }) }}">show</a>
+                                            </button>
+                                            <button>
+                                                <a href="{{ path('categorie_edit', { 'id': categorie.id }) }}">edit</a>
+                                            </button>
+                                        </ul>
+                                    </td>
                                 </tr>
                             {% endfor %}
                             </tbody>
                         </table>
 
-                        <select id="phase">
-                            <option value='sqd'>test </option>
-                            <option value='sqd'>test </option>
-
-                        </select>
-                        <select id="villes">
-                        </select>
-
-
-
+                        </table>
                     </div>
                 </div>
             </div>
@@ -69,6 +62,10 @@
 
 
 {% endblock content %}
+
+
+
+
 {% block js %}
     <!--Load JQuery-->
     <script src="js/jquery.min.js"></script>
@@ -113,38 +110,6 @@
                     },
                     'colvis'
                 ]
-            });
-
-
-
-
-            $("#phase").change(function()
-            {
-                $("#villes").empty();
-                //alert("qsdsd");
-                $.ajax({
-                    url      : "{{ path('match_list') }}", // La ressource ciblée
-                    data     : {id_pays: $('#pahse option:selected').val()},
-                    type     : 'GET', // Le type de la requête HTTP
-                    dataType : 'JSON',
-                    error    : function(request, error) { // Info Debuggage si erreur
-                        alert("Erreur : "+error);
-                    },
-                    success  : function(data) {  //xhr.readyState==4 && xhr.status==200
-                        //var les_villes = xhr.responseText; inutile
-                        //data : les données reçus de ville.php = responseText
-
-                        $("#villes").empty();
-                        for (var i=0; i < data.length; i++)
-                        {
-                            var d="<option value='sqd'>ala werda</option>  " +
-                                "<option value='sqd'>test </option> ";
-
-                            $('#villes').append(d);
-                        }
-                        //<?php echo "</select>" ?>
-                    }
-                });
             });
         });
     </script>
